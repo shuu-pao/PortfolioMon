@@ -793,7 +793,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_battlescreen",
-      "community": 5,
+      "community": 16,
       "norm_label": "battlescreen.jsx"
     },
     {
@@ -803,7 +803,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_battlescreen_unlockedsectionlabel",
-      "community": 5,
+      "community": 16,
       "norm_label": "unlockedsectionlabel()"
     },
     {
@@ -813,7 +813,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "src_components_battlescreen_battlescreen",
-      "community": 5,
+      "community": 16,
       "norm_label": "battlescreen()"
     },
     {
@@ -843,7 +843,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_chatappaboutme",
-      "community": 78,
+      "community": 5,
       "norm_label": "chatappaboutme.jsx"
     },
     {
@@ -853,7 +853,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_chatappaboutme_chatappaboutme",
-      "community": 78,
+      "community": 5,
       "norm_label": "chatappaboutme()"
     },
     {
@@ -863,7 +863,7 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "src_components_chatappaboutme_chatmessage",
-      "community": 78,
+      "community": 5,
       "norm_label": "chatmessage()"
     },
     {
@@ -873,7 +873,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_contentscreen",
-      "community": 78,
+      "community": 5,
       "norm_label": "contentscreen.jsx"
     },
     {
@@ -883,7 +883,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_components_contentscreen_view_titles",
-      "community": 78,
+      "community": 5,
       "norm_label": "view_titles"
     },
     {
@@ -893,7 +893,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_components_contentscreen_contentscreen",
-      "community": 78,
+      "community": 5,
       "norm_label": "contentscreen()"
     },
     {
@@ -943,7 +943,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_resultoverlay",
-      "community": 5,
+      "community": 16,
       "norm_label": "resultoverlay.jsx"
     },
     {
@@ -953,7 +953,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_resultoverlay_resultoverlay",
-      "community": 5,
+      "community": 16,
       "norm_label": "resultoverlay()"
     },
     {
@@ -983,7 +983,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_typechart",
-      "community": 5,
+      "community": 16,
       "norm_label": "typechart.jsx"
     },
     {
@@ -993,7 +993,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_components_typechart_types",
-      "community": 5,
+      "community": 16,
       "norm_label": "types"
     },
     {
@@ -1003,7 +1003,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_components_typechart_emoji",
-      "community": 5,
+      "community": 16,
       "norm_label": "emoji"
     },
     {
@@ -1013,7 +1013,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_components_typechart_color",
-      "community": 5,
+      "community": 16,
       "norm_label": "color"
     },
     {
@@ -1023,7 +1023,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_components_typechart_axisarrow",
-      "community": 5,
+      "community": 16,
       "norm_label": "axisarrow()"
     },
     {
@@ -1033,7 +1033,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_components_typechart_typechart",
-      "community": 5,
+      "community": 16,
       "norm_label": "typechart()"
     },
     {
@@ -1073,7 +1073,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_bosses",
-      "community": 5,
+      "community": 16,
       "norm_label": "bosses.js"
     },
     {
@@ -1083,7 +1083,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_data_bosses_battlethemes",
-      "community": 5,
+      "community": 16,
       "norm_label": "battlethemes"
     },
     {
@@ -1093,7 +1093,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_data_bosses_boss_assets",
-      "community": 5,
+      "community": 16,
       "norm_label": "boss_assets"
     },
     {
@@ -1103,7 +1103,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_data_bosses_type_colors",
-      "community": 5,
+      "community": 16,
       "norm_label": "type_colors"
     },
     {
@@ -1113,7 +1113,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "src_data_bosses_move_descriptions",
-      "community": 5,
+      "community": 16,
       "norm_label": "move_descriptions"
     },
     {
@@ -1123,7 +1123,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "src_data_bosses_hollow_damage",
-      "community": 5,
+      "community": 16,
       "norm_label": "hollow_damage"
     },
     {
@@ -1133,7 +1133,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "src_data_bosses_movesfor",
-      "community": 5,
+      "community": 16,
       "norm_label": "movesfor()"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "src_data_bosses_rationale_66",
-      "community": 5,
+      "community": 16,
       "norm_label": "note: the hollow enemy deals the same fraction on super-effective and neutral"
     },
     {
@@ -1153,7 +1153,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_chatdata",
-      "community": 78,
+      "community": 5,
       "norm_label": "chatdata.js"
     },
     {
@@ -1163,7 +1163,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_data_chatdata_user_options",
-      "community": 78,
+      "community": 5,
       "norm_label": "user_options"
     },
     {
@@ -1173,7 +1173,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_content",
-      "community": 78,
+      "community": 5,
       "norm_label": "content.js"
     },
     {
@@ -1183,7 +1183,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_data_content_aboutinfo",
-      "community": 78,
+      "community": 5,
       "norm_label": "aboutinfo"
     },
     {
@@ -1193,7 +1193,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_data_content_educationinfo",
-      "community": 78,
+      "community": 5,
       "norm_label": "educationinfo"
     },
     {
@@ -1203,7 +1203,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_data_content_contactinfo",
-      "community": 78,
+      "community": 5,
       "norm_label": "contactinfo"
     },
     {
@@ -1213,7 +1213,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "src_data_content_skillsinfo",
-      "community": 78,
+      "community": 5,
       "norm_label": "skillsinfo"
     },
     {
@@ -1223,17 +1223,17 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "src_data_content_projectsinfo",
-      "community": 78,
+      "community": 5,
       "norm_label": "projectsinfo"
     },
     {
       "label": "professionalExperience",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L84",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "src_data_content_professionalexperience",
-      "community": 78,
+      "community": 5,
       "norm_label": "professionalexperience"
     },
     {
@@ -1333,7 +1333,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_questions",
-      "community": 16,
+      "community": 60,
       "norm_label": "questions.js"
     },
     {
@@ -1343,7 +1343,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_data_questions_all_subjects",
-      "community": 16,
+      "community": 60,
       "norm_label": "all_subjects"
     },
     {
@@ -1353,7 +1353,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_data_questions_slot_damage",
-      "community": 16,
+      "community": 60,
       "norm_label": "slot_damage"
     },
     {
@@ -1363,7 +1363,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_data_questions_question_bank",
-      "community": 16,
+      "community": 60,
       "norm_label": "question_bank"
     },
     {
@@ -1373,7 +1373,7 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "src_data_questions_addasked",
-      "community": 16,
+      "community": 60,
       "norm_label": "addasked()"
     },
     {
@@ -1383,7 +1383,7 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "src_data_questions_pickquestion",
-      "community": 16,
+      "community": 60,
       "norm_label": "pickquestion()"
     },
     {
@@ -1463,7 +1463,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_game_battlemoves",
-      "community": 5,
+      "community": 16,
       "norm_label": "battlemoves.js"
     },
     {
@@ -1473,7 +1473,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_game_battlemoves_buildbattlemoves",
-      "community": 5,
+      "community": 16,
       "norm_label": "buildbattlemoves()"
     },
     {
@@ -1483,7 +1483,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_game_battleschool",
-      "community": 16,
+      "community": 60,
       "norm_label": "battleschool.js"
     },
     {
@@ -1493,7 +1493,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_game_battleschool_buildschoolsteps",
-      "community": 16,
+      "community": 60,
       "norm_label": "buildschoolsteps()"
     },
     {
@@ -1523,7 +1523,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_game_types",
-      "community": 5,
+      "community": 16,
       "norm_label": "types.js"
     },
     {
@@ -1533,7 +1533,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_game_types_normalizetype",
-      "community": 5,
+      "community": 16,
       "norm_label": "normalizetype()"
     },
     {
@@ -1543,7 +1543,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_game_types_effectiveness_chart",
-      "community": 5,
+      "community": 16,
       "norm_label": "effectiveness_chart"
     },
     {
@@ -1553,7 +1553,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_game_types_geteffectiveness",
-      "community": 5,
+      "community": 16,
       "norm_label": "geteffectiveness()"
     },
     {
@@ -1573,7 +1573,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_game_types_gettypecolor",
-      "community": 5,
+      "community": 16,
       "norm_label": "gettypecolor()"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_skill",
-      "community": 56,
+      "community": 78,
       "norm_label": "skill.md"
     },
     {
@@ -5703,7 +5703,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_realtime",
-      "community": 56,
+      "community": 36,
       "norm_label": "realtime.md"
     },
     {
@@ -6093,7 +6093,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_admin_node_usage_examples",
-      "community": 60,
+      "community": 56,
       "norm_label": "usage examples"
     },
     {
@@ -6103,7 +6103,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_admin_node_1_impersonating_an_unauthenticated_user",
-      "community": 60,
+      "community": 56,
       "norm_label": "1. impersonating an unauthenticated user"
     },
     {
@@ -6113,7 +6113,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_admin_node_2_impersonating_a_specific_user_cloud_functions",
-      "community": 60,
+      "community": 56,
       "norm_label": "2. impersonating a specific user (cloud functions)"
     },
     {
@@ -6123,7 +6123,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_admin_node_3_impersonating_a_specific_user_plain_http",
-      "community": 60,
+      "community": 56,
       "norm_label": "3. impersonating a specific user (plain http)"
     },
     {
@@ -6133,7 +6133,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_admin_node_4_running_with_unrestricted_access",
-      "community": 60,
+      "community": 56,
       "norm_label": "4. running with unrestricted access"
     },
     {
@@ -6143,7 +6143,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_android",
-      "community": 56,
+      "community": 78,
       "norm_label": "sdk_android.md"
     },
     {
@@ -6513,7 +6513,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_web",
-      "community": 27,
+      "community": 78,
       "norm_label": "sdk_web.md"
     },
     {
@@ -6563,7 +6563,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_web_calling_operations",
-      "community": 27,
+      "community": 90,
       "norm_label": "calling operations"
     },
     {
@@ -6573,7 +6573,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_web_using_executequery_preferred_for_clarity",
-      "community": 27,
+      "community": 90,
       "norm_label": "using `executequery` (preferred for clarity)"
     },
     {
@@ -6583,7 +6583,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_sdk_web_using_action_shortcuts",
-      "community": 27,
+      "community": 90,
       "norm_label": "using action shortcuts"
     },
     {
@@ -6663,7 +6663,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_search",
-      "community": 23,
+      "community": 78,
       "norm_label": "search.md"
     },
     {
@@ -6673,7 +6673,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_search_search_solutions_reference_vector_full_text_search",
-      "community": 23,
+      "community": 78,
       "norm_label": "search solutions reference (vector & full-text search)"
     },
     {
@@ -6683,7 +6683,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "continue_skills_firebase_data_connect_reference_search_search_selection_guide",
-      "community": 23,
+      "community": 78,
       "norm_label": "search selection guide"
     },
     {
@@ -7573,7 +7573,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_firestore_references_enterprise_indexes",
-      "community": 47,
+      "community": 79,
       "norm_label": "indexes.md"
     },
     {
@@ -8463,7 +8463,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "continue_skills_firebase_firestore_references_standard_indexes",
-      "community": 79,
+      "community": 29,
       "norm_label": "indexes.md"
     },
     {
@@ -9887,6 +9887,86 @@
       "norm_label": "example 2: firebase (requires plist)"
     },
     {
+      "label": "progress.md",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "superpowers_sdd_progress",
+      "community": 88,
+      "norm_label": "progress.md"
+    },
+    {
+      "label": "SDD Progress Ledger \u2014 P5 Premium Redesign",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "superpowers_sdd_progress_sdd_progress_ledger_p5_premium_redesign",
+      "community": 88,
+      "norm_label": "sdd progress ledger \u2014 p5 premium redesign"
+    },
+    {
+      "label": "Tasks",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "superpowers_sdd_progress_tasks",
+      "community": 88,
+      "norm_label": "tasks"
+    },
+    {
+      "label": "Minor findings (triaged at final review)",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "superpowers_sdd_progress_minor_findings_triaged_at_final_review",
+      "community": 88,
+      "norm_label": "minor findings (triaged at final review)"
+    },
+    {
+      "label": "task-1-brief.md",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/task-1-brief.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "superpowers_sdd_task_1_brief",
+      "community": 91,
+      "norm_label": "task-1-brief.md"
+    },
+    {
+      "label": "Task 1: Design tokens + base reset (`p5.css`, `index.css`, `index.html`, `App.jsx`)",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/task-1-brief.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "superpowers_sdd_task_1_brief_task_1_design_tokens_base_reset_p5_css_index_css_index_html_app_jsx",
+      "community": 91,
+      "norm_label": "task 1: design tokens + base reset (`p5.css`, `index.css`, `index.html`, `app.jsx`)"
+    },
+    {
+      "label": "task-2-brief.md",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/task-2-brief.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "superpowers_sdd_task_2_brief",
+      "community": 92,
+      "norm_label": "task-2-brief.md"
+    },
+    {
+      "label": "Task 2: Progress module + test (`progress.js`, `progress.test.mjs`)",
+      "file_type": "document",
+      "source_file": ".superpowers/sdd/task-2-brief.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "superpowers_sdd_task_2_brief_task_2_progress_module_test_progress_js_progress_test_mjs",
+      "community": 92,
+      "norm_label": "task 2: progress module + test (`progress.js`, `progress.test.mjs`)"
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
@@ -9907,6 +9987,56 @@
       "norm_label": "graphify"
     },
     {
+      "label": "CONTRIBUTING.md",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "contributing",
+      "community": 83,
+      "norm_label": "contributing.md"
+    },
+    {
+      "label": "Contributing Guidelines",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "contributing_contributing_guidelines",
+      "community": 83,
+      "norm_label": "contributing guidelines"
+    },
+    {
+      "label": "Code of Conduct",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "contributing_code_of_conduct",
+      "community": 83,
+      "norm_label": "code of conduct"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "contributing_workflow",
+      "community": 83,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "Technical Details",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "contributing_technical_details",
+      "community": 83,
+      "norm_label": "technical details"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
@@ -9917,34 +10047,34 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "React + Vite",
+      "label": "Key Components",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L1",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "readme_react_vite",
+      "id": "readme_key_components",
       "community": 8,
-      "norm_label": "react + vite"
+      "norm_label": "key components"
     },
     {
-      "label": "React Compiler",
+      "label": "Tech Stack",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L10",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "readme_react_compiler",
+      "id": "readme_tech_stack",
       "community": 8,
-      "norm_label": "react compiler"
+      "norm_label": "tech stack"
     },
     {
-      "label": "Expanding the ESLint configuration",
+      "label": "How to Run",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L14",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "readme_expanding_the_eslint_configuration",
+      "id": "readme_how_to_run",
       "community": 8,
-      "norm_label": "expanding the eslint configuration"
+      "norm_label": "how to run"
     },
     {
       "label": "Continue Example Configuration",
@@ -12152,7 +12282,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L84",
+      "source_location": "L98",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_professionalexperience",
@@ -20987,6 +21117,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "superpowers_sdd_progress",
+      "target": "superpowers_sdd_progress_sdd_progress_ledger_p5_premium_redesign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "superpowers_sdd_progress_sdd_progress_ledger_p5_premium_redesign",
+      "target": "superpowers_sdd_progress_minor_findings_triaged_at_final_review",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".superpowers/sdd/progress.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "superpowers_sdd_progress_sdd_progress_ledger_p5_premium_redesign",
+      "target": "superpowers_sdd_progress_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".superpowers/sdd/task-1-brief.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "superpowers_sdd_task_1_brief",
+      "target": "superpowers_sdd_task_1_brief_task_1_design_tokens_base_reset_p5_css_index_css_index_html_app_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".superpowers/sdd/task-2-brief.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "superpowers_sdd_task_2_brief",
+      "target": "superpowers_sdd_task_2_brief_task_2_progress_module_test_progress_js_progress_test_mjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -21007,31 +21187,71 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "README.md",
+      "source_file": "CONTRIBUTING.md",
       "source_location": "L1",
       "weight": 1.0,
+      "source": "contributing",
+      "target": "contributing_contributing_guidelines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "contributing_contributing_guidelines",
+      "target": "contributing_code_of_conduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "contributing_contributing_guidelines",
+      "target": "contributing_technical_details",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "contributing_contributing_guidelines",
+      "target": "contributing_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
       "source": "readme",
-      "target": "readme_react_vite",
+      "target": "readme_how_to_run",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L14",
+      "source_location": "L8",
       "weight": 1.0,
-      "source": "readme_react_vite",
-      "target": "readme_expanding_the_eslint_configuration",
+      "source": "readme",
+      "target": "readme_key_components",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L10",
+      "source_location": "L13",
       "weight": 1.0,
-      "source": "readme_react_vite",
-      "target": "readme_react_compiler",
+      "source": "readme",
+      "target": "readme_tech_stack",
       "confidence_score": 1.0
     },
     {
@@ -21123,5 +21343,5 @@
       "source_file": "index.html"
     }
   ],
-  "built_at_commit": "27844ed091574bd5f4649721615945ea50a8ed5e"
+  "built_at_commit": "b8b247403f9c2bcfb628b71ba7219be429389e33"
 }

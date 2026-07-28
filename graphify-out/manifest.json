@@ -5,8 +5,8 @@
     "semantic_hash": "fec31362e5a2d8bc433bdd4f7ccac173"
   },
   ".claude/settings.local.json": {
-    "mtime": 1784485712.4305706,
-    "ast_hash": "6b03f8db6accf08e8e853491fd7aa4f8",
+    "mtime": 1785149652.1657228,
+    "ast_hash": "9dcb4916b043293b15e6ac7f6377a88b",
     "semantic_hash": ""
   },
   "eslint.config.js": {
@@ -15,13 +15,13 @@
     "semantic_hash": "3aa4b57d7f08181d86bde52a4dcb7f22"
   },
   "package.json": {
-    "mtime": 1784283650.7060373,
-    "ast_hash": "6084ceec66cddd4be836f9324f879246",
+    "mtime": 1785232784.9889762,
+    "ast_hash": "06c1dada126222326253fbe7b3c5df90",
     "semantic_hash": ""
   },
   "src/App.jsx": {
-    "mtime": 1784486262.5843232,
-    "ast_hash": "c90df1db1a94094dacafe2184a2af751",
+    "mtime": 1785077733.5000439,
+    "ast_hash": "5148ba1de80abe1eb1b25a4a2fe827cb",
     "semantic_hash": ""
   },
   "src/main.jsx": {
@@ -30,9 +30,9 @@
     "semantic_hash": "e13723e2574429d9a6d849727e3ff695"
   },
   "vite.config.js": {
-    "mtime": 1784036601.5599236,
-    "ast_hash": "79a07cef1f77691bf7ce02045af8a598",
-    "semantic_hash": "79a07cef1f77691bf7ce02045af8a598"
+    "mtime": 1785077733.5176759,
+    "ast_hash": "42507bed1c24c8e83e899ca397af5142",
+    "semantic_hash": ""
   },
   "public/audio/Boss Select.mp3": {
     "mtime": 1783607046.26908,
@@ -170,7 +170,7 @@
     "semantic_hash": "065a43b60177b5d49855c650386167e7"
   },
   "public/audio/esc.mp3": {
-    "mtime": 1783607820.5099676,
+    "mtime": 1785232784.9899752,
     "ast_hash": "004d2c3c0514dd57225ca319d87a8acf",
     "semantic_hash": "004d2c3c0514dd57225ca319d87a8acf"
   },
@@ -195,13 +195,13 @@
     "semantic_hash": "8a6643a420fdad6bfb583523bc6cef16"
   },
   "README.md": {
-    "mtime": 1783585617.0232973,
-    "ast_hash": "a28dc4cb878325f3e9e5649f3e1469ac",
-    "semantic_hash": "a28dc4cb878325f3e9e5649f3e1469ac"
+    "mtime": 1785233747.3080604,
+    "ast_hash": "607660773da8ee7fc514bd74d2dca09e",
+    "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1784203153.3147378,
-    "ast_hash": "0b03aef4bfa2e62dbb643808f8fce41d",
+    "mtime": 1784564720.839614,
+    "ast_hash": "674d8a95b03ff6242de27996a7a1bce6",
     "semantic_hash": ""
   },
   "public/favicon.svg": {
@@ -345,28 +345,28 @@
     "semantic_hash": ""
   },
   "src/components/BattleScreen.jsx": {
-    "mtime": 1784473611.8237908,
-    "ast_hash": "34586b0ab601b2c12c16cee13982f3a8",
+    "mtime": 1785232784.993481,
+    "ast_hash": "8295daa071ed81b187e17de7f0b18500",
     "semantic_hash": ""
   },
   "src/components/BossSelect.jsx": {
-    "mtime": 1784201606.6179118,
-    "ast_hash": "704f3d1396d183a889cd4a242be5c79d",
+    "mtime": 1785077733.5015562,
+    "ast_hash": "73f80c853ebf14b141982ae01e4bf58c",
     "semantic_hash": ""
   },
   "src/components/ContentScreen.jsx": {
-    "mtime": 1784473712.2050967,
-    "ast_hash": "aa4a8e6db349fe4299e936e485d205a2",
+    "mtime": 1785232784.995569,
+    "ast_hash": "22a327f057b16866298255677298ab4b",
     "semantic_hash": ""
   },
   "src/components/MainMenu.jsx": {
-    "mtime": 1784488681.7960315,
-    "ast_hash": "cdbecdfc313282755ee81d5a514abe59",
+    "mtime": 1785232656.3632352,
+    "ast_hash": "31965ebe4ee70f8d318147297edc5fc1",
     "semantic_hash": ""
   },
   "src/components/NameEntry.jsx": {
-    "mtime": 1784208139.2383265,
-    "ast_hash": "0e9601f3dbd5d95c5730ab1de2bae1ee",
+    "mtime": 1785077733.5075932,
+    "ast_hash": "07dd736de3cdc38ec4b5ea9b5f7953e7",
     "semantic_hash": ""
   },
   "src/components/ResultOverlay.jsx": {
@@ -375,8 +375,8 @@
     "semantic_hash": ""
   },
   "src/components/StartScreen.jsx": {
-    "mtime": 1784201029.9820628,
-    "ast_hash": "3ad088191c0b784cbf8768421f93ae58",
+    "mtime": 1785077733.5085871,
+    "ast_hash": "8693c816fb63765d26b691064107f26f",
     "semantic_hash": ""
   },
   "src/components/TypeChart.jsx": {
@@ -385,8 +385,8 @@
     "semantic_hash": ""
   },
   "src/data/audio.js": {
-    "mtime": 1784484200.9972167,
-    "ast_hash": "b3b3e23da27510ba87d40ce24bb8fb0a",
+    "mtime": 1785077733.5100927,
+    "ast_hash": "28853c56621d0e0b91af69eba9abd199",
     "semantic_hash": ""
   },
   "src/data/bosses.js": {
@@ -395,13 +395,13 @@
     "semantic_hash": ""
   },
   "src/data/content.js": {
-    "mtime": 1784487058.9189234,
-    "ast_hash": "f54d1f3c6a32e9e6f5f511b1a2442e9a",
+    "mtime": 1785232784.996574,
+    "ast_hash": "bd1fc6dec4b0a5567fdf3a233890295a",
     "semantic_hash": ""
   },
   "src/data/menu.js": {
-    "mtime": 1784486242.6315978,
-    "ast_hash": "aba8caf5dea39e1e71a7e99020e20eb9",
+    "mtime": 1785232784.998082,
+    "ast_hash": "7ad5f91f8b908982abb6d3a7467dabc1",
     "semantic_hash": ""
   },
   "src/data/questions.js": {
@@ -440,8 +440,8 @@
     "semantic_hash": ""
   },
   "src/hooks/useBattle.js": {
-    "mtime": 1784483583.8468645,
-    "ast_hash": "6b093341d114eafe058b1ebad6e4319a",
+    "mtime": 1785232784.9990866,
+    "ast_hash": "b41fe1b1083f1c58d836ec7dc71f058a",
     "semantic_hash": ""
   },
   "src/hooks/useTypewriter.js": {
@@ -1895,13 +1895,13 @@
     "semantic_hash": ""
   },
   "src/components/ChatAppAboutMe.jsx": {
-    "mtime": 1784488295.32314,
-    "ast_hash": "df11187d4b08b765be5404836d03c2a1",
+    "mtime": 1785232784.9944868,
+    "ast_hash": "04b414c5a6c28a1262291929e42f6ad5",
     "semantic_hash": ""
   },
   "src/data/chatData.js": {
-    "mtime": 1784474790.331459,
-    "ast_hash": "25bd7405bf0055cff514cd346f8b0a7c",
+    "mtime": 1785077733.5110989,
+    "ast_hash": "b518c822913db57464fe4a2d96a9f26f",
     "semantic_hash": ""
   },
   "src/game/battleAsgore.js": {
@@ -2067,6 +2067,26 @@
   "public/audio/Pokemon RubySapphireEmerald - Littleroot Town.mp3": {
     "mtime": 1783609475.9972243,
     "ast_hash": "1697d61e694602bb5f28cb445282d2eb",
+    "semantic_hash": ""
+  },
+  ".superpowers/sdd/progress.md": {
+    "mtime": 1784545673.1233141,
+    "ast_hash": "3f123c2361fd02317df2f341bdc076db",
+    "semantic_hash": ""
+  },
+  ".superpowers/sdd/task-1-brief.md": {
+    "mtime": 1784545706.7744842,
+    "ast_hash": "13c7b5b9fc837592b2de89b804327f0b",
+    "semantic_hash": ""
+  },
+  ".superpowers/sdd/task-2-brief.md": {
+    "mtime": 1784545757.479359,
+    "ast_hash": "6e3ce48b7066461b9204576ca9a7ed53",
+    "semantic_hash": ""
+  },
+  "CONTRIBUTING.md": {
+    "mtime": 1785233663.732232,
+    "ast_hash": "294111948dacd2530993faca5cf8dc76",
     "semantic_hash": ""
   }
 }

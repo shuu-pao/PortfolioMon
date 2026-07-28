@@ -1,16 +1,16 @@
-# Graph Report - creative-portfolio  (2026-07-20)
+# Graph Report - creative-portfolio  (2026-07-28)
 
 ## Corpus Check
-- 289 files · ~199,236 words
+- 293 files · ~201,740 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1002 nodes · 1085 edges · 88 communities (83 shown, 5 thin omitted)
+- 1015 nodes · 1094 edges · 93 communities (85 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `27844ed0`
+- Built from commit: `b8b24740`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -93,10 +93,15 @@
 - Antigravity Setup
 - Recommended Method: Using Plugins
 - Cursor Setup
+- Contributing Guidelines
 - Android Studio Setup
 - PackageDescription
 - The @refresh Directive
+- SDD Progress Ledger — P5 Premium Redesign
 - Security & Production
+- Calling Operations
+- task-1-brief.md
+- task-2-brief.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `Firebase Authentication Web SDK` - 15 edges
@@ -129,7 +134,7 @@
 - **React + Vite Build Toolchain** — readme_vitejs_plugin_react, readme_oxc, readme_swc [INFERRED 0.85]
 - **PortfolioMon React+Vite Scaffold** — index_portfoliomon, index_main_jsx, readme_react-vite [INFERRED 0.85]
 
-## Communities (88 total, 5 thin omitted)
+## Communities (93 total, 8 thin omitted)
 
 ### Community 0 - "PortfolioMon Battle Game (App.jsx)"
 Cohesion: 0.06
@@ -152,8 +157,8 @@ Cohesion: 0.07
 Nodes (26): Aliases, Basic Query, Contents, Create, Create with Server Values, Delete, Embedded Queries, Expression Operators (Compare with Server Values) (+18 more)
 
 ### Community 5 - "App Component & Audio/Color Helpers"
-Cohesion: 0.07
-Nodes (37): App(), AudioControls(), BattleScreen(), unlockedSectionLabel(), BossSelect(), MainMenu(), NameEntry(), ResultOverlay() (+29 more)
+Cohesion: 0.08
+Nodes (28): App(), AudioControls(), BossSelect(), ChatAppAboutMe(), ContentScreen(), VIEW_TITLES, MainMenu(), NameEntry() (+20 more)
 
 ### Community 6 - "ESLint React Hooks Plugin"
 Cohesion: 0.06
@@ -161,7 +166,7 @@ Nodes (35): eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-r
 
 ### Community 8 - "ESLint Core"
 Cohesion: 0.50
-Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
+Nodes (3): How to Run, Key Components, Tech Stack
 
 ### Community 13 - "Key Attributes"
 Cohesion: 0.08
@@ -176,8 +181,8 @@ Cohesion: 0.08
 Nodes (24): Access Levels, Anti-Patterns, @auth Directive, auth.token Fields, Authorization Data Lookup, Authorization Patterns, Available Bindings, CEL Expressions (+16 more)
 
 ### Community 16 - "Type Effectiveness Logic"
-Cohesion: 0.09
-Nodes (26): a, asTexts, attack, g, h, killTexts, playerDmgTaken, r (+18 more)
+Cohesion: 0.06
+Nodes (39): a, asTexts, attack, g, h, killTexts, playerDmgTaken, r (+31 more)
 
 ### Community 20 - "Firebase Crashlytics iOS Setup Guide"
 Cohesion: 0.08
@@ -192,8 +197,8 @@ Cohesion: 0.11
 Nodes (11): Exploring Commands, Initialization, Refresh Android Studio Local Environment, Refresh Antigravity Local Environment, Refresh Claude Code Local Environment, Refresh Gemini CLI Local Environment, Refresh Other Local Environment, Common Issues (+3 more)
 
 ### Community 23 - "1. Vector Similarity Search (Semantic)"
-Cohesion: 0.22
-Nodes (8): 1. Query Formats (`queryFormat` argument), 2. Full-Text Search (Lexical), 2. Relevance Thresholding (`relevanceThreshold` and `_metadata.relevance`), Full-Text Search Queries, Schema Setup, Search Selection Guide, Search Solutions Reference (Vector & Full-Text Search), Tuning Full-Text Queries
+Cohesion: 0.33
+Nodes (6): 1. Query Formats (`queryFormat` argument), 2. Full-Text Search (Lexical), 2. Relevance Thresholding (`relevanceThreshold` and `_metadata.relevance`), Full-Text Search Queries, Schema Setup, Tuning Full-Text Queries
 
 ### Community 24 - "main.swift"
 Cohesion: 0.33
@@ -208,15 +213,15 @@ Cohesion: 0.13
 Nodes (15): Connect to Emulator, Email Link Authentication, Firebase Authentication Web SDK, Initialization, Observe Auth State, Sign In Anonymously, Sign In with Apple (Popup), Sign In with Facebook (Popup) (+7 more)
 
 ### Community 27 - "Web SDK"
-Cohesion: 0.13
-Nodes (14): Best Practices for Agents, Calling Operations, Client-Side Caching, Data Type Mapping Reference, Initialization, Installation, Resilient Enum Handling, Subscriptions (Realtime) (+6 more)
+Cohesion: 0.18
+Nodes (11): Best Practices for Agents, Client-Side Caching, Data Type Mapping Reference, Initialization, Installation, Resilient Enum Handling, Subscriptions (Realtime), TanStack Query Support (React) (+3 more)
 
 ### Community 28 - "⛔️ CRITICAL RULE: NO INLINE INITIALIZATION ⛔️"
 Cohesion: 0.13
 Nodes (14): 1. Import and Initialize, 2. Type-Safe Data Models (Codable), 3. Basic CRUD Operations, 4. Pipeline Queries, 5. Realtime Listeners in SwiftUI (Lifecycle Best Practices), ⛔️ CRITICAL RULE: NO FirebaseFirestoreSwift ⛔️, ⛔️ CRITICAL RULE: NO INLINE INITIALIZATION ⛔️, Examples (+6 more)
 
 ### Community 29 - "Firestore Indexes Reference"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (15): 1. High Write Rates (Sequential Values), 2. Large String/Map/Array Fields, 3. TTL Fields, Automatic vs. Manual Management, Best Practices & Exemptions, CLI Commands, Composite Indexes, Config files (+7 more)
 
 ### Community 30 - "⛔️ CRITICAL RULES & ENVIRONMENT CHECKS"
@@ -244,7 +249,7 @@ Cohesion: 0.15
 Nodes (12): Accessing User Authentication Context, Auth Context Mappings, Auth Extraction Example, Cloud Functions Integration Reference, Comprehensive Example, Core Trigger Configuration, 🚨 Critical Infinite Loop Constraint, Event Filtering (+4 more)
 
 ### Community 36 - "Realtime Reference"
-Cohesion: 0.17
+Cohesion: 0.15
 Nodes (12): CEL Bindings in Conditions, Combining Multiple @refresh Directives, Common Patterns, Contents, Explicit Mutation Signals (`onMutationExecuted`), Implicit Entity Refresh signals, `mutation` — The Triggering Event, Realtime Reference (+4 more)
 
 ### Community 37 - "iOS SDK"
@@ -288,7 +293,7 @@ Cohesion: 0.20
 Nodes (6): Chat Session, Flutter Setup for Firebase AI Logic, Initialization, Installation, Text Generation, Usage
 
 ### Community 47 - "Firestore Indexes Reference"
-Cohesion: 0.20
+Cohesion: 0.22
 Nodes (9): CLI Commands, Config files, Firestore Indexes Reference, Index Density, Index Ordering, Index Structure, Management, Query Support Examples (+1 more)
 
 ### Community 48 - "Cloud Firestore on Android (Kotlin)"
@@ -324,8 +329,8 @@ Cohesion: 0.22
 Nodes (8): 1. Initialization, 2. Decision Framework: Pipelines vs. Standard Queries, 3. Pipeline Examples, 4. Real-Time Listener & Document Operations, Full-Text Search, Relational Joins Pattern, Rules & Accountability, Web SDK Usage (Enterprise Native Mode)
 
 ### Community 56 - "Firebase AI Logic iOS Setup Guide"
-Cohesion: 0.25
-Nodes (4): Admin Node SDK, Best Practices for Agents, Configuration in `connector.yaml`, Generation
+Cohesion: 0.20
+Nodes (9): 1. Impersonating an Unauthenticated User, 2. Impersonating a Specific User (Cloud Functions), 3. Impersonating a Specific User (Plain HTTP), 4. Running with Unrestricted Access, Admin Node SDK, Best Practices for Agents, Configuration in `connector.yaml`, Generation (+1 more)
 
 ### Community 57 - "Firebase AI Logic iOS Setup Guide"
 Cohesion: 0.25
@@ -340,8 +345,8 @@ Cohesion: 0.25
 Nodes (7): 1. Configure and Verify Firebase MCP Server, 1. Install and Verify Firebase Extension, 2. Restart and Verify Connection, 2. Restart and Verify Connection, Alternative: Manual MCP Configuration (Project Scope), Gemini CLI Setup, Recommended: Installing Extensions
 
 ### Community 60 - "SKILL.md"
-Cohesion: 0.40
-Nodes (5): 1. Impersonating an Unauthenticated User, 2. Impersonating a Specific User (Cloud Functions), 3. Impersonating a Specific User (Plain HTTP), 4. Running with Unrestricted Access, Usage Examples
+Cohesion: 0.46
+Nodes (6): addAsked(), ALL_SUBJECTS, pickQuestion(), QUESTION_BANK, SLOT_DAMAGE, buildSchoolSteps()
 
 ### Community 61 - "Schema Reference"
 Cohesion: 0.10
@@ -411,10 +416,6 @@ Nodes (5): 1. Install and Verify Firebase Skills, 2. Configure and Verify Fireba
 Cohesion: 0.33
 Nodes (5): 1. Create a Firebase Project and App, 2. Installation, 3. Initialization, 4. Using Services, Firebase Web Setup Guide
 
-### Community 78 - "1. Local Prototyping: Data Seeding"
-Cohesion: 0.22
-Nodes (10): ChatAppAboutMe(), ContentScreen(), VIEW_TITLES, USER_OPTIONS, aboutInfo, contactInfo, educationInfo, professionalExperience (+2 more)
-
 ### Community 80 - "Antigravity Setup"
 Cohesion: 0.40
 Nodes (4): 1. Install and Verify Firebase Skills, 2. Configure and Verify Firebase MCP Server, 3. Restart and Verify Connection, Antigravity Setup
@@ -427,6 +428,10 @@ Nodes (4): 1. Install and Verify Plugins, 2. Restart and Verify Connection, Clau
 Cohesion: 0.40
 Nodes (4): 1. Install and Verify Firebase Skills, 2. Configure and Verify Firebase MCP Server, 3. Restart and Verify Connection, Cursor Setup
 
+### Community 83 - "Contributing Guidelines"
+Cohesion: 0.40
+Nodes (4): Code of Conduct, Contributing Guidelines, Technical Details, Workflow
+
 ### Community 85 - "Android Studio Setup"
 Cohesion: 0.50
 Nodes (3): Android Studio Setup, MCP Setup, Skills Installation
@@ -435,26 +440,36 @@ Nodes (3): Android Studio Setup, MCP Setup, Skills Installation
 Cohesion: 0.22
 Nodes (9): 1. Vector Similarity Search (Semantic), A. Auto-Embedding Search, A. Generation on Insert, Automatic Embedding Generation (`_embed` server value), B. Custom Vector Search, B. Generation on Update, Schema Setup, Similarity Search Queries (+1 more)
 
+### Community 88 - "SDD Progress Ledger — P5 Premium Redesign"
+Cohesion: 0.50
+Nodes (3): Minor findings (triaged at final review), SDD Progress Ledger — P5 Premium Redesign, Tasks
+
 ### Community 89 - "Security & Production"
 Cohesion: 0.67
 Nodes (3): App Check, Remote Config, Security & Production
+
+### Community 90 - "Calling Operations"
+Cohesion: 0.67
+Nodes (3): Calling Operations, Using Action Shortcuts, Using `executeQuery` (Preferred for clarity)
 
 ## Ambiguous Edges - Review These
 - `graphify` → `Configured Claude 4 Sonnet Model`  [AMBIGUOUS]
   .continue/agents/new-config.yaml · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **589 isolated node(s):** `PackageDescription`, `Foundation`, `PathKit`, `name`, `private` (+584 more)
+- **597 isolated node(s):** `PackageDescription`, `Foundation`, `PathKit`, `name`, `private` (+592 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `graphify` and `Configured Claude 4 Sonnet Model`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
+- **Why does `Search Solutions Reference (Vector & Full-Text Search)` connect `1. Local Prototyping: Data Seeding` to `1. Vector Similarity Search (Semantic)`, `The @refresh Directive`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **What connects `PackageDescription`, `Foundation`, `PathKit` to the rest of the system?**
-  _589 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _597 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `PortfolioMon Battle Game (App.jsx)` be split into smaller, more focused modules?**
   _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._
 - **Should `React App Dependencies (package.json)` be split into smaller, more focused modules?**
@@ -462,6 +477,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `NPM Scripts (build/dev/lint)` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `App Component & Audio/Color Helpers` be split into smaller, more focused modules?**
-  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
-- **Should `ESLint React Hooks Plugin` be split into smaller, more focused modules?**
-  _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.080338266384778 - nodes in this community are weakly interconnected._
