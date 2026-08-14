@@ -12,8 +12,7 @@ export default function MainMenu({ menuOptions, menuIndex, currentMenuOption, se
   const litSet = new Set(earnedStars)
   const stars = starSlots.map((slot) => ({ ...slot, lit: litSet.has(slot.id) }))
 
-  // Every star lit — i.e. all real battles won (placeholder bosses start lit,
-  // so this also needs the three built bosses beaten).
+  // Every star lit — i.e. all three bosses beaten.
   const allStarsAchieved = starSlots.every((slot) => litSet.has(slot.id))
 
   return (

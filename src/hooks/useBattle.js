@@ -17,14 +17,10 @@ function normalizeSections(value) {
 // Which section-star(s) a legit victory in each mode lights. One boss unlocks
 // exactly one section, so this is a 1:1 map. ASGORE is unbeatable and
 // reinforcement wins are excluded by usedReinforcements, so they credit nothing.
-// The two placeholder bosses (skillsBoss / projectsBoss) are locked, so their
-// entries here simply sit ready for when their real fights are built.
 const SECTION_STARS = {
   hollow: ['about'],       // TWO
   ghost: ['professional'], // GHOST (befriend)
   school: ['education'],   // DR. ZANGETSU
-  skillsBoss: ['skills'],
-  projectsBoss: ['projects'],
 }
 
 // Owns the entire battle subsystem: state, the turn-sequence engine, sprite
@@ -43,17 +39,17 @@ export function useBattle({ setScreen, setContentView, playSoundEffect, characte
   // section).
   const [resultScreen, setResultScreen] = useState(null)
   // Unlocked portfolio sections. Starts with the always-available CONTACT plus
-  // SKILLS and PERSONAL PROJECTS (their bosses, BOSS 04 / BOSS 05, don't exist
-  // yet, so those sections are pre-unlocked to match their default-lit stars).
-  // The rest unlock during the session via battle wins or the "Unlock whole
-  // menu" button. Intentionally NOT persisted: a refresh resets to this baseline
-  // so the menu's progression — and the unlock button — stay meaningful.
+  // SKILLS and PERSONAL PROJECTS (there is no boss gating those two, so they're
+  // pre-unlocked). The rest unlock during the session via battle wins or the
+  // "Unlock whole menu" button. Intentionally NOT persisted: a refresh resets to
+  // this baseline so the menu's progression — and the unlock button — stay
+  // meaningful.
   const [unlockedSections, setUnlockedSections] = useState(['contact', 'skills', 'projects'])
   // Sections unlocked via legit battle — drives the menu star row AND serves as
   // the "Normal Mode" baseline (so a bulk unlock can be undone without erasing
-  // fairly-earned progress). Session-only, like unlocks. BOSS 04 and BOSS 05
-  // have no real fights yet, so their sections (skills / projects) start lit by
-  // default — treated as already earned "for now".
+  // fairly-earned progress). Session-only, like unlocks. SKILLS and PERSONAL
+  // PROJECTS have no boss (and no star slot), so they're carried here too —
+  // purely so "Normal Mode" keeps them unlocked; they don't affect the star row.
   const [earnedStars, setEarnedStars] = useState(['skills', 'projects'])
   // Gates the battle theme: it must wait until the "Boss Select" cue finishes
   // before it starts. Reset to false whenever a battle begins.
