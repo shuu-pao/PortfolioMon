@@ -74,8 +74,9 @@ export const skillsInfo = {
 }
 
 // ── PERSONAL PROJECTS ──
-// Collapsed cards show only the name + tech tags; `blurb` is the full
-// writeup revealed when the card is expanded via "Read more".
+// Collapsed cards show a thumbnail + name + tech tags; `blurb` is the full
+// writeup revealed when the card is expanded via "Read more". `thumbnail`
+// paths live under public/Projects/.
 export const projectsInfo = {
   intro: 'Builds from my degree and free time — from embedded firmware to applied computer vision. (This portfolio is one of them.)',
   projects: [
@@ -84,41 +85,44 @@ export const projectsInfo = {
       blurb:
         'This very portfolio — a full turn-based RPG battle system built from scratch with React and Vite. You’re standing inside it right now.',
       tech: ['React', 'Vite', 'JavaScript', 'CSS'],
-      href: '',
+      thumbnail: '/Projects/PortfolioMon.png',
     },
     {
       name: 'My Portfolio (Premium)',
       blurb:
         'My other portfolio site — a cinematic, reference-matched personal site built with Next.js, TypeScript, and Framer Motion, pixel-matched to hand-picked design references.',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      href: '',
+      thumbnail: '/Projects/Premium Portfolio.jpg',
     },
     {
       name: 'PIC-Based Futsal Scoreboard',
       blurb:
         'A microcontroller scoreboard written in C (XC8) with real-time match timers and 7-segment display integration — a hands-on embedded-systems lab project.',
       tech: ['C', 'XC8', 'Embedded', 'Microcontrollers'],
-      href: '',
+      thumbnail: '/Projects/Futsal Scoreboard.jpg',
     },
     {
       name: 'SMARTBIN 3 (Thesis)',
       blurb:
         'Undergraduate thesis: a deep-learning waste-sorting bin using YOLOv8 for real-time classification with a motorized platform for auto-segregation. My contribution was diagnosing a flawed classification approach that had stalled progress for ~2 months and proposing an object-detection redesign with confidence-score thresholding — which my teammate implemented to clear the training bottleneck. The model reached 98.67% accuracy on standard waste and 92.44% on deformed items (targets: 98% / 80%).',
       tech: ['YOLOv8', 'Computer Vision', 'Python', 'Deep Learning'],
-      href: '',
+      thumbnail: '/Projects/Thesis.jpg',
     },
   ],
 }
 
 // ── PROFESSIONAL EXPERIENCE ──
-// Two separate roles at the same employer, newest first. Rendered as
-// collapsed-by-default dropdown cards in ContentScreen — only role/company/
-// duration show until the card is expanded.
+// Two separate roles at the same employer, newest first. ContentScreen groups
+// entries by `company` into one timeline card per employer (logo + company
+// name shown once), with each role as its own dropdown — the newest role per
+// company opens by default, older roles start collapsed. `logo` is the path
+// to that employer's logo in public/logo/.
 export const professionalExperience = [
   {
     id: 'associate',
     role: 'Software Engineering Associate',
     company: 'Accenture',
+    logo: '/logo/accenture-logo.png',
     duration: 'Aug 2026 – Present',
     location: 'Cebu City, Philippines',
     summary:
@@ -143,6 +147,7 @@ export const professionalExperience = [
     id: 'intern',
     role: 'Agentforce Developer Intern',
     company: 'Accenture',
+    logo: '/logo/accenture-logo.png',
     duration: 'Jan 2026 – Apr 2026',
     location: 'Cebu City, Philippines',
     summary:

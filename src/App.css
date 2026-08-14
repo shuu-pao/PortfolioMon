@@ -102,9 +102,15 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
 }
 .page-copy { margin: 0 0 12px; }
 
-/* ── Professional Experience (dropdown job cards) ── */
+/* ── Professional Experience (timeline: one card per employer, one dropdown
+   per role — see groupByCompany in ContentScreen.jsx) ── */
 .experience-list-card { display: flex; flex-direction: column; gap: 14px; }
-.experience-card { background: var(--c-panel-2); border: 3px solid var(--c-frame); box-shadow: 4px 4px 0 var(--c-shadow); }
+.experience-company-group { background: var(--c-panel-2); border: 3px solid var(--c-frame); box-shadow: 4px 4px 0 var(--c-shadow); }
+.experience-company-header { display: flex; align-items: center; gap: 10px; padding: 16px 16px 14px; border-bottom: 3px solid var(--c-frame); }
+.experience-company-logo { width: 32px; height: auto; object-fit: contain; }
+.experience-company { font-size: 1.4rem; color: var(--c-purple); margin: 0; font-weight: bold; }
+.experience-timeline { display: flex; flex-direction: column; }
+.experience-role-item + .experience-role-item { border-top: 3px solid var(--c-frame); }
 .experience-toggle {
   all: unset;
   box-sizing: border-box;
@@ -124,9 +130,6 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
   letter-spacing: 0.06rem;
   margin: 0 0 4px;
 }
-.experience-company-row { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
-.experience-company-logo { width: 28px; height: auto; object-fit: contain; }
-.experience-company { font-size: 1.4rem; color: var(--c-purple); margin: 0; font-weight: bold; }
 .experience-meta {
   font-size: 1.05rem;
   color: var(--c-ink);
@@ -1049,7 +1052,8 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
 .menu-option:focus-visible, .boss-option:focus-visible,
 .menu-button:focus-visible, .start-button:focus-visible,
 .back-button:focus-visible, .cancel-button:focus-visible,
-.move-card:focus-visible, .audio-toggle:focus-visible, .name-input:focus-visible {
+.move-card:focus-visible, .audio-toggle:focus-visible, .name-input:focus-visible,
+.experience-toggle:focus-visible, .project-card:focus-visible {
   outline: 3px solid var(--c-yellow);
   outline-offset: 3px;
 }
@@ -1193,14 +1197,15 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
   box-shadow: 4px 4px 0 var(--c-shadow);
   cursor: pointer;
   text-align: left;
+  font: inherit;
 }
 .project-card:hover { filter: brightness(1.1); }
+.project-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 2px solid var(--c-frame); }
 .project-name { font-family: var(--font-display); font-size: 0.92rem; letter-spacing: 0.04rem; color: var(--c-ink); margin: 0; }
 .project-blurb { font-size: 1.15rem; line-height: 1.45; color: var(--c-ink); margin: 0; }
 .project-tech { display: flex; flex-wrap: wrap; gap: 8px; }
 .tech-tag { font-family: var(--font-display); font-size: 0.5rem; letter-spacing: 0.06rem; text-transform: uppercase; color: var(--c-ink); padding: 5px 10px; border: 2px solid var(--c-muted); background: rgba(255, 255, 255, 0.04); }
 .project-more { font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.06rem; text-transform: uppercase; color: var(--c-cyan); margin-top: 2px; }
-.project-link { align-self: flex-start; margin-top: 2px; font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.08rem; text-transform: uppercase; color: var(--c-cyan); text-decoration: none; border-bottom: 2px solid var(--c-cyan); }
 
 /* ── Contact (redesigned) ── */
 .contact-card { display: flex; flex-direction: column; gap: 16px; }
