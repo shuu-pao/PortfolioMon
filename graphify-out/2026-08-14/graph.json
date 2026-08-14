@@ -1180,7 +1180,7 @@
       "label": "aboutInfo",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L5",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "src_data_content_aboutinfo",
       "community": 29,
@@ -1190,7 +1190,7 @@
       "label": "educationInfo",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L21",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "src_data_content_educationinfo",
       "community": 29,
@@ -1200,7 +1200,7 @@
       "label": "contactInfo",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L36",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "src_data_content_contactinfo",
       "community": 29,
@@ -1210,7 +1210,7 @@
       "label": "skillsInfo",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L48",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "src_data_content_skillsinfo",
       "community": 29,
@@ -1220,7 +1220,7 @@
       "label": "projectsInfo",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L82",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "src_data_content_projectsinfo",
       "community": 29,
@@ -1230,7 +1230,7 @@
       "label": "professionalExperience",
       "file_type": "code",
       "source_file": "src/data/content.js",
-      "source_location": "L124",
+      "source_location": "L117",
       "_origin": "ast",
       "id": "src_data_content_professionalexperience",
       "community": 29,
@@ -1733,7 +1733,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_ai_logic_basics_skill_setup_initialization",
-      "community": 94,
+      "community": 38,
       "norm_label": "setup & initialization"
     },
     {
@@ -1743,7 +1743,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_ai_logic_basics_skill_prerequisites",
-      "community": 94,
+      "community": 38,
       "norm_label": "prerequisites"
     },
     {
@@ -1753,7 +1753,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_ai_logic_basics_skill_installation",
-      "community": 94,
+      "community": 38,
       "norm_label": "installation"
     },
     {
@@ -1843,7 +1843,7 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_ai_logic_basics_skill_advanced_features",
-      "community": 38,
+      "community": 83,
       "norm_label": "advanced features"
     },
     {
@@ -1853,7 +1853,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_ai_logic_basics_skill_structured_output_json",
-      "community": 38,
+      "community": 83,
       "norm_label": "structured output (json)"
     },
     {
@@ -1863,7 +1863,7 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_ai_logic_basics_skill_on_device_ai_hybrid",
-      "community": 38,
+      "community": 83,
       "norm_label": "on-device ai (hybrid)"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_skill_md",
-      "community": 58,
+      "community": 65,
       "norm_label": "skill.md"
     },
     {
@@ -4963,7 +4963,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_config_md",
-      "community": 58,
+      "community": 65,
       "norm_label": "config.md"
     },
     {
@@ -6093,7 +6093,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_sdk_admin_node_usage_examples",
-      "community": 83,
+      "community": 58,
       "norm_label": "usage examples"
     },
     {
@@ -6103,7 +6103,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_sdk_admin_node_1_impersonating_an_unauthenticated_user",
-      "community": 83,
+      "community": 58,
       "norm_label": "1. impersonating an unauthenticated user"
     },
     {
@@ -6113,7 +6113,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_sdk_admin_node_2_impersonating_a_specific_user_cloud_functions",
-      "community": 83,
+      "community": 58,
       "norm_label": "2. impersonating a specific user (cloud functions)"
     },
     {
@@ -6123,7 +6123,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_sdk_admin_node_3_impersonating_a_specific_user_plain_http",
-      "community": 83,
+      "community": 58,
       "norm_label": "3. impersonating a specific user (plain http)"
     },
     {
@@ -6133,7 +6133,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_sdk_admin_node_4_running_with_unrestricted_access",
-      "community": 83,
+      "community": 58,
       "norm_label": "4. running with unrestricted access"
     },
     {
@@ -6253,7 +6253,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "c_users_paolo_onedrive_documents_repositories_creative_portfolio_agents_skills_firebase_data_connect_reference_sdk_flutter_md",
-      "community": 58,
+      "community": 65,
       "norm_label": "sdk_flutter.md"
     },
     {
@@ -12302,7 +12302,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L5",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_aboutinfo",
@@ -12312,7 +12312,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L36",
+      "source_location": "L34",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_contactinfo",
@@ -12322,7 +12322,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L21",
+      "source_location": "L26",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_educationinfo",
@@ -12332,7 +12332,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L124",
+      "source_location": "L117",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_professionalexperience",
@@ -12342,7 +12342,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L82",
+      "source_location": "L79",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_projectsinfo",
@@ -12352,7 +12352,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/content.js",
-      "source_location": "L48",
+      "source_location": "L46",
       "weight": 1.0,
       "source": "src_data_content",
       "target": "src_data_content_skillsinfo",

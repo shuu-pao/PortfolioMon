@@ -76,6 +76,10 @@ export default function ChatAppAboutMe({ onBack, onHover, onSelect, onNavigate }
     setIsTyping(true)
 
     // Brief typing indicator (150–500ms), then the bot's predetermined reply.
+    // pushExchange only ever runs from handleOptionClick (a click handler), never
+    // during render, so this Math.random() call is safe despite the lint rule's
+    // static (render-unaware) analysis.
+    // eslint-disable-next-line react-hooks/purity
     const delay = TYPING_MIN + Math.random() * (TYPING_MAX - TYPING_MIN)
     schedule(() => {
       setIsTyping(false)

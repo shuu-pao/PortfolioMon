@@ -19,7 +19,7 @@ export const aboutInfo = {
     'Focused on products that work, and genuinely delight the people using them',
     'AI-driven interfaces to polished web apps — turning ideas into meaningful digital experiences',
   ],
-  resumeHref: '/resume/PAOLO_JANSEN_ENRERA_CV_JULY_2026.pdf',
+  resumeHref: '/resume/PAOLO_JANSEN_A_ENRERA_CV_AUGUST.pdf',
 }
 
 // ── EDUCATION (redesigned credential card) ──

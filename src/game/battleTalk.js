@@ -5,7 +5,7 @@ import { buildAsgoreSteps } from './battleAsgore'
 // other than GHOST (GHOST's TALK/JOKE is handled inside buildGhostSteps). TALK
 // always goes first: the player tries to talk, the opponent is unresponsive, then
 // the opponent's normal move resolves.
-export function buildTalkSteps(battleState, move) {
+export function buildTalkSteps(battleState) {
   const steps = []
   const playerName = battleState.player.name
   const enemyName = battleState.enemy.name

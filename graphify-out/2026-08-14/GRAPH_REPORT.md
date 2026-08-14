@@ -1,11 +1,11 @@
 # Graph Report - creative-portfolio  (2026-08-14)
 
 ## Corpus Check
-- 130 files · ~111,540 words
+- 130 files · ~111,363 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1020 nodes · 1097 edges · 100 communities (92 shown, 8 thin omitted)
+- 1020 nodes · 1097 edges · 99 communities (91 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -104,7 +104,6 @@
 - Calling Operations
 - task-1-brief.md
 - task-2-brief.md
-- Advanced Features
 - graphify
 - task-1-brief.md
 - task-2-brief.md
@@ -140,7 +139,7 @@
 - **React + Vite Build Toolchain** — readme_vitejs_plugin_react, readme_oxc, readme_swc [INFERRED 0.85]
 - **PortfolioMon React+Vite Scaffold** — index_portfoliomon, index_main_jsx, readme_react-vite [INFERRED 0.85]
 
-## Communities (100 total, 8 thin omitted)
+## Communities (99 total, 8 thin omitted)
 
 ### Community 0 - "PortfolioMon Battle Game (App.jsx)"
 Cohesion: 0.06
@@ -272,7 +271,7 @@ Nodes (12): Basic Query, Best Practices for Agents, Calling Operations, Client-S
 
 ### Community 38 - "Templates"
 Cohesion: 0.18
-Nodes (11): Advanced Features, App Check, Firebase AI Logic Basics, Initialization Code References, On-Device AI (Hybrid), Overview, References, Remote Config (+3 more)
+Nodes (11): App Check, Firebase AI Logic Basics, Initialization Code References, Installation, Overview, Prerequisites, References, Remote Config (+3 more)
 
 ### Community 39 - "Flutter & Firebase Setup Guide"
 Cohesion: 0.18
@@ -351,8 +350,8 @@ Cohesion: 0.25
 Nodes (7): 1. Configure and Verify Firebase MCP Server, 1. Install and Verify Firebase Extension, 2. Restart and Verify Connection, 2. Restart and Verify Connection, Alternative: Manual MCP Configuration (Project Scope), Gemini CLI Setup, Recommended: Installing Extensions
 
 ### Community 58 - "Basic Checks"
-Cohesion: 0.25
-Nodes (4): Admin Node SDK, Best Practices for Agents, Configuration in `connector.yaml`, Generation
+Cohesion: 0.20
+Nodes (9): 1. Impersonating an Unauthenticated User, 2. Impersonating a Specific User (Cloud Functions), 3. Impersonating a Specific User (Plain HTTP), 4. Running with Unrestricted Access, Admin Node SDK, Best Practices for Agents, Configuration in `connector.yaml`, Generation (+1 more)
 
 ### Community 59 - "Alternative: Manual MCP Configuration (Project Scope)"
 Cohesion: 0.25
@@ -379,7 +378,7 @@ Cohesion: 0.29
 Nodes (7): 1. `google_sign_in` 7.2.0 API Changes, 2. Initialization & Web Hang/Crash Pitfalls, 3. Web Logout Crashes, 4. Prototyping Workaround: Bypassing Firestore Composite Indices, 5. Robust `AuthService` Boilerplate, 6. Troubleshooting `auth/unauthorized-domain` on Flutter Web, Firebase Auth & Google Sign-In for Flutter
 
 ### Community 65 - "Firebase Auth & Google Sign-In for Flutter"
-Cohesion: 0.29
+Cohesion: 0.20
 Nodes (6): 2. Production: Admin SDK Bulk Operations, 3. Production: Bulk Operations via raw SQL, 🚨 Critical SQL Operations Constraint, Data Seeding & Bulk Operations Reference, SDK Bulk APIs Features:, SDK Bulk Operations Example
 
 ### Community 66 - "Data Seeding & Bulk Operations Reference"
@@ -451,8 +450,8 @@ Cohesion: 0.40
 Nodes (5): Deployment, Firebase CLI Commands, Initialize SQL Connect, Local Development, Schema Management
 
 ### Community 83 - "Usage Examples"
-Cohesion: 0.40
-Nodes (5): 1. Impersonating an Unauthenticated User, 2. Impersonating a Specific User (Cloud Functions), 3. Impersonating a Specific User (Plain HTTP), 4. Running with Unrestricted Access, Usage Examples
+Cohesion: 0.67
+Nodes (3): Advanced Features, On-Device AI (Hybrid), Structured Output (JSON)
 
 ### Community 87 - "The @refresh Directive"
 Cohesion: 0.40
@@ -477,10 +476,6 @@ Nodes (3): How to Run, Key Components, Tech Stack
 ### Community 92 - "task-2-brief.md"
 Cohesion: 0.50
 Nodes (3): Minor findings (triaged at final review), SDD Progress Ledger — P5 Premium Redesign, Tasks
-
-### Community 94 - "Advanced Features"
-Cohesion: 0.67
-Nodes (3): Installation, Prerequisites, Setup & Initialization
 
 ## Knowledge Gaps
 - **602 isolated node(s):** `PackageDescription`, `Foundation`, `PathKit`, `name`, `private` (+597 more)

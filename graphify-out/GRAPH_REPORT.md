@@ -1,16 +1,16 @@
 # Graph Report - creative-portfolio  (2026-08-14)
 
 ## Corpus Check
-- 130 files · ~111,363 words
+- 130 files · ~146,593 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1020 nodes · 1097 edges · 99 communities (91 shown, 8 thin omitted)
+- 1017 nodes · 1093 edges · 97 communities (88 shown, 9 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `923b3025`
+- Built from commit: `36e2db2e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -96,9 +96,8 @@
 - Antigravity Setup
 - Recommended Method: Using Plugins
 - Cursor Setup
-- Usage Examples
+- Android Studio Setup
 - PackageDescription
-- The @refresh Directive
 - SDD Progress Ledger — P5 Premium Redesign
 - Security & Production
 - Calling Operations
@@ -139,7 +138,7 @@
 - **React + Vite Build Toolchain** — readme_vitejs_plugin_react, readme_oxc, readme_swc [INFERRED 0.85]
 - **PortfolioMon React+Vite Scaffold** — index_portfoliomon, index_main_jsx, readme_react-vite [INFERRED 0.85]
 
-## Communities (99 total, 8 thin omitted)
+## Communities (97 total, 9 thin omitted)
 
 ### Community 0 - "PortfolioMon Battle Game (App.jsx)"
 Cohesion: 0.06
@@ -162,8 +161,8 @@ Cohesion: 0.07
 Nodes (26): Aliases, Basic Query, Contents, Create, Create with Server Values, Delete, Embedded Queries, Expression Operators (Compare with Server Values) (+18 more)
 
 ### Community 5 - "App Component & Audio/Color Helpers"
-Cohesion: 0.13
-Nodes (18): App(), AudioControls(), BossSelect(), MainMenu(), NameEntry(), StartScreen(), audioUrl(), soundVolumes (+10 more)
+Cohesion: 0.07
+Nodes (34): App(), AudioControls(), BattleScreen(), unlockedSectionLabel(), BossSelect(), MainMenu(), NameEntry(), ResultOverlay() (+26 more)
 
 ### Community 6 - "ESLint React Hooks Plugin"
 Cohesion: 0.06
@@ -186,12 +185,12 @@ Cohesion: 0.10
 Nodes (20): Advanced aggregation with RANK, Advanced CTE with upserts (atomic get-or-create), Basic SELECT with field aliasing, Basic UPDATE, Blog with Permissions, E-Commerce Store, Examples, Movie Review App (+12 more)
 
 ### Community 15 - "Security Reference"
-Cohesion: 0.10
-Nodes (20): @col, Contents, Core Directives, Customizing Tables, Data Types, @default, Defining Types, Enumerations (+12 more)
+Cohesion: 0.25
+Nodes (8): Contents, Customizing Tables, Data Types, Defining Types, Enumerations, Schema Reference, User Table with Auth, Views (Advanced)
 
 ### Community 16 - "Type Effectiveness Logic"
-Cohesion: 0.06
-Nodes (39): a, asTexts, attack, g, h, killTexts, playerDmgTaken, r (+31 more)
+Cohesion: 0.09
+Nodes (26): a, asTexts, attack, g, h, killTexts, playerDmgTaken, r (+18 more)
 
 ### Community 18 - "Render Script (render_current.py)"
 Cohesion: 0.11
@@ -226,8 +225,8 @@ Cohesion: 0.13
 Nodes (15): 1. High Write Rates (Sequential Values), 2. Large String/Map/Array Fields, 3. TTL Fields, Automatic vs. Manual Management, Best Practices & Exemptions, CLI Commands, Composite Indexes, Config files (+7 more)
 
 ### Community 27 - "Web SDK"
-Cohesion: 0.13
-Nodes (14): 1. Generate Firestore Rules, 3. Strict Path and Relationship Scoping, 4. Secure Counter Updates, 5. **CRITICAL** Ensure Application Validity, Advanced Validation for Business Logic, Critical Constraints, Critical Directives for Secure Generation, **CRITICAL** RBAC Guidelines (+6 more)
+Cohesion: 0.33
+Nodes (6): 3. Strict Path and Relationship Scoping, 4. Secure Counter Updates, 5. **CRITICAL** Ensure Application Validity, Advanced Validation for Business Logic, Phase-3: Devil's Advocate Attack, Phase-4: Syntactic Validation
 
 ### Community 28 - "⛔️ CRITICAL RULE: NO INLINE INITIALIZATION ⛔️"
 Cohesion: 0.13
@@ -271,7 +270,7 @@ Nodes (12): Basic Query, Best Practices for Agents, Calling Operations, Client-S
 
 ### Community 38 - "Templates"
 Cohesion: 0.18
-Nodes (11): App Check, Firebase AI Logic Basics, Initialization Code References, Installation, Overview, Prerequisites, References, Remote Config (+3 more)
+Nodes (11): Advanced Features, App Check, Firebase AI Logic Basics, Initialization Code References, On-Device AI (Hybrid), Overview, References, Remote Config (+3 more)
 
 ### Community 39 - "Flutter & Firebase Setup Guide"
 Cohesion: 0.18
@@ -290,7 +289,7 @@ Cohesion: 0.18
 Nodes (10): 1. Import and Initialize, 2. Type-Safe Data Models (Codable), 3. Writing Data (Modern Concurrency & Codable), 4. Reading Data (Modern Concurrency & Codable), 5. Realtime Listeners in SwiftUI (Lifecycle Best Practices), ⛔️ CRITICAL RULE: NO FirebaseFirestoreSwift ⛔️, ⛔️ CRITICAL RULE: NO INLINE INITIALIZATION ⛔️, Firebase Firestore iOS Setup Guide (+2 more)
 
 ### Community 43 - "Android SDK"
-Cohesion: 0.20
+Cohesion: 0.22
 Nodes (9): CLI Commands, Config files, Firestore Indexes Reference, Index Density, Index Ordering, Index Structure, Management, Query Support Examples (+1 more)
 
 ### Community 44 - "Android SDK Usage (Enterprise Native Mode)"
@@ -314,8 +313,8 @@ Cohesion: 0.22
 Nodes (8): 1. Create a Firebase Project and App (Automated), 2. Installation (Automated via Swift Package Manager CLI), 3. Initialization, AppDelegate (Traditional / UIKit), ⛔️ CRITICAL RULE: INITIALIZATION ORDER ⛔️, ⛔️ CRITICAL RULE: STATE MANAGEMENT (OBSERVATION VS COMBINE) ⛔️, Firebase iOS Setup Guide, SwiftUI (Modern - SAFE PATTERN)
 
 ### Community 49 - "SKILL.md"
-Cohesion: 0.22
-Nodes (9): Cloud SQL Configuration, Configuration Reference, connector.yaml, Contents, dataconnect.yaml, Extension Settings, Project Structure, SDK Generation Options (+1 more)
+Cohesion: 0.08
+Nodes (24): Breaking Changes, CI/CD Integration, Cloud SQL Configuration, Configuration Reference, Connect from SDK, connector.yaml, Contents, dataconnect.yaml (+16 more)
 
 ### Community 50 - "Firebase Authentication on Android (Kotlin)"
 Cohesion: 0.22
@@ -326,8 +325,8 @@ Cohesion: 0.22
 Nodes (8): Collection Group Support, Collections, Document Data Model, Documents, Examples, Firestore Data Model Reference, Subcollections, Use Cases
 
 ### Community 52 - "ios_setup.md"
-Cohesion: 0.22
-Nodes (8): Get a Single Document, Get Multiple Documents, Order and Limit, Pipeline Queries, Python SDK Usage, Queries, Reading Data, Simple and Compound Queries
+Cohesion: 0.14
+Nodes (13): Add a Document with Auto-ID, Get a Single Document, Get Multiple Documents, Order and Limit, Pipeline Queries, Python SDK Usage, Queries, Reading Data (+5 more)
 
 ### Community 53 - "Native SQL Operations"
 Cohesion: 0.22
@@ -358,8 +357,8 @@ Cohesion: 0.25
 Nodes (8): 1. Create a Firestore Enterprise Database, 2. Create `firebase.json`, 2. Create `firestore.rules`, 3. Create `firestore.indexes.json`, Deploy rules and indexes, Local Emulation, Manual Initialization, Provisioning Firestore Enterprise Native Mode
 
 ### Community 60 - "SKILL.md"
-Cohesion: 0.46
-Nodes (6): addAsked(), ALL_SUBJECTS, pickQuestion(), QUESTION_BANK, SLOT_DAMAGE, buildSchoolSteps()
+Cohesion: 0.29
+Nodes (7): @col, Core Directives, @default, @index, @searchable, @table, @unique
 
 ### Community 61 - "Schema Reference"
 Cohesion: 0.29
@@ -438,24 +437,16 @@ Cohesion: 0.40
 Nodes (4): 1. Install and Verify Firebase Skills, 2. Configure and Verify Firebase MCP Server, 3. Restart and Verify Connection, Cursor Setup
 
 ### Community 80 - "Antigravity Setup"
-Cohesion: 0.40
-Nodes (5): Breaking Changes, CI/CD Integration, Deploy Workflow, Deployment, Schema Migrations
+Cohesion: 0.33
+Nodes (6): Critical Directives for Secure Generation, **CRITICAL** RBAC Guidelines, Mandatory: User Data Separation (The "No Mixed Content" Rule), Phase-1: Codebase Analysis, Phase-2: Security Rules Generation, Workflow
 
 ### Community 81 - "Recommended Method: Using Plugins"
 Cohesion: 0.40
-Nodes (5): Connect from SDK, Emulator, Emulator Configuration (firebase.json), Seed Data, Start Emulator
+Nodes (5): Many-to-Many, One-to-Many (Implicit Foreign Key), One-to-One, @ref Directive, Relationships
 
 ### Community 82 - "Cursor Setup"
-Cohesion: 0.40
-Nodes (5): Deployment, Firebase CLI Commands, Initialize SQL Connect, Local Development, Schema Management
-
-### Community 83 - "Usage Examples"
 Cohesion: 0.67
-Nodes (3): Advanced Features, On-Device AI (Hybrid), Structured Output (JSON)
-
-### Community 87 - "The @refresh Directive"
-Cohesion: 0.40
-Nodes (5): Add a Document with Auto-ID, Set a Document, Transactions, Update a Document, Writing Data
+Nodes (3): Installation, Prerequisites, Setup & Initialization
 
 ### Community 88 - "SDD Progress Ledger — P5 Premium Redesign"
 Cohesion: 0.40
@@ -478,15 +469,15 @@ Cohesion: 0.50
 Nodes (3): Minor findings (triaged at final review), SDD Progress Ledger — P5 Premium Redesign, Tasks
 
 ## Knowledge Gaps
-- **602 isolated node(s):** `PackageDescription`, `Foundation`, `PathKit`, `name`, `private` (+597 more)
+- **600 isolated node(s):** `PackageDescription`, `Foundation`, `PathKit`, `name`, `private` (+595 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `PackageDescription`, `Foundation`, `PathKit` to the rest of the system?**
-  _602 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _600 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `PortfolioMon Battle Game (App.jsx)` be split into smaller, more focused modules?**
   _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._
 - **Should `React App Dependencies (package.json)` be split into smaller, more focused modules?**
@@ -494,7 +485,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `NPM Scripts (build/dev/lint)` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `App Component & Audio/Color Helpers` be split into smaller, more focused modules?**
-  _Cohesion score 0.12561576354679804 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07164404223227752 - nodes in this community are weakly interconnected._
 - **Should `ESLint React Hooks Plugin` be split into smaller, more focused modules?**
   _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
 - **Should `Chart Drawing Script (draw_chart.py)` be split into smaller, more focused modules?**
