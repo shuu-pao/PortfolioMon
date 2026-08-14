@@ -10,15 +10,16 @@ export function useTypewriter(text, typingSpeed = 30) {
 
   useEffect(() => {
     if (!text) {
-      setDisplayed('')
-      setIsTyping(false)
-      return undefined
+      // Deferred via setTimeout so the state updates happen outside the effect
+      // body (avoids cascading renders) — same 0ms-later reset, imperceptible.
+      const timer = setTimeout(() => {
+        setDisplayed('')
+        setIsTyping(false)
+      }, 0)
+      return () => clearTimeout(timer)
     }
 
     const textToDisplay = text
-    setDisplayed('')
-    setIsTyping(true)
-
     let charIndex = 0
     if (typewriterRef.current) clearTimeout(typewriterRef.current)
 
@@ -37,7 +38,14 @@ export function useTypewriter(text, typingSpeed = 30) {
       }
     }
 
-    typewriterRef.current = setTimeout(typeNextChar, typingSpeed)
+    // Deferred via setTimeout so the reset state updates happen outside the
+    // effect body (avoids cascading renders) — the typing loop then starts
+    // right after, same as before.
+    typewriterRef.current = setTimeout(() => {
+      setDisplayed('')
+      setIsTyping(true)
+      typewriterRef.current = setTimeout(typeNextChar, typingSpeed)
+    }, 0)
 
     return () => {
       if (typewriterRef.current) clearTimeout(typewriterRef.current)

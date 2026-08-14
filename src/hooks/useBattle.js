@@ -121,9 +121,13 @@ export function useBattle({ setScreen, setContentView, playSoundEffect, characte
     if (!battleState?.isResolving || !battleState.sequence?.length) return undefined
     const stepIndex = battleState.sequenceIndex ?? 0
     if (stepIndex >= battleState.sequence.length) {
-      setBattleState((prev) => (prev ? { ...prev, isResolving: false, introActive: false } : prev))
-      setBattleMenuView('main')
-      return undefined
+      // Deferred via setTimeout so the state updates happen outside the effect
+      // body (avoids cascading renders).
+      const doneTimer = window.setTimeout(() => {
+        setBattleState((prev) => (prev ? { ...prev, isResolving: false, introActive: false } : prev))
+        setBattleMenuView('main')
+      }, 0)
+      return () => window.clearTimeout(doneTimer)
     }
 
     // Wait for typing to complete before advancing to next step.
@@ -164,35 +168,41 @@ export function useBattle({ setScreen, setContentView, playSoundEffect, characte
   // loss sequence steps), so this only handles navigation.
   useEffect(() => {
     if (!battleState || !battleState.result || battleState.isResolving) return undefined
-    // On victory we always show the "You Won!" screen first. From there the
-    // player presses CONTINUE: if the win unlocked a previously-locked section,
-    // the Unlock screen appears next; otherwise we return to Boss Select. The
-    // actual unlock is performed by a separate effect when the won screen mounts
-    // (see below), keeping this effect free of side effects.
-    if (battleState.result === 'victory') {
-      const sections = normalizeSections(battleState.unlockSections)
-      const newlyUnlocked = sections.some((s) => !unlockedSections.includes(s))
-      // Credit the section star(s) only for a legit win — CALL
-      // REINFORCEMENTS (usedReinforcements) is a cheat and earns nothing. This
-      // also builds the "Normal Mode" baseline of fairly-earned sections.
-      if (!battleState.usedReinforcements) {
-        const earned = SECTION_STARS[battleState.mode]
-        if (earned?.length) {
-          setEarnedStars((prev) => Array.from(new Set([...prev, ...earned])))
+    // Deferred via setTimeout so the state updates happen outside the effect
+    // body (avoids cascading renders). battleState/unlockedSections are read
+    // from this render's closure either way, so the deferral doesn't change
+    // which values are used — only pushes the update one tick later.
+    const timer = setTimeout(() => {
+      // On victory we always show the "You Won!" screen first. From there the
+      // player presses CONTINUE: if the win unlocked a previously-locked section,
+      // the Unlock screen appears next; otherwise we return to Boss Select. The
+      // actual unlock is performed by a separate effect when the won screen mounts
+      // (see below), keeping this effect free of side effects.
+      if (battleState.result === 'victory') {
+        const sections = normalizeSections(battleState.unlockSections)
+        const newlyUnlocked = sections.some((s) => !unlockedSections.includes(s))
+        // Credit the section star(s) only for a legit win — CALL
+        // REINFORCEMENTS (usedReinforcements) is a cheat and earns nothing. This
+        // also builds the "Normal Mode" baseline of fairly-earned sections.
+        if (!battleState.usedReinforcements) {
+          const earned = SECTION_STARS[battleState.mode]
+          if (earned?.length) {
+            setEarnedStars((prev) => Array.from(new Set([...prev, ...earned])))
+          }
         }
-      }
-      if (battleState.directUnlock) {
-        // GHOST was befriended via JOKE: skip the "You Won!" screen and go
-        // straight to "Unlocked!" (the Unlocked SFX plays via the resultScreen
-        // effect below).
-        setResultScreen({ type: 'unlocked', sections })
+        if (battleState.directUnlock) {
+          // GHOST was befriended via JOKE: skip the "You Won!" screen and go
+          // straight to "Unlocked!" (the Unlocked SFX plays via the resultScreen
+          // effect below).
+          setResultScreen({ type: 'unlocked', sections })
+        } else {
+          setResultScreen({ type: 'won', newlyUnlocked, sections })
+        }
       } else {
-        setResultScreen({ type: 'won', newlyUnlocked, sections })
+        setResultScreen({ type: 'tryAgain' })
       }
-    } else {
-      setResultScreen({ type: 'tryAgain' })
-    }
-    return undefined
+    }, 0)
+    return () => clearTimeout(timer)
     // `unlockedSections` is intentionally omitted: this effect must run once when
     // the result settles, and reading its current value here is correct at that
     // moment. Re-running after we unlock would double-fire navigation.
@@ -206,12 +216,16 @@ export function useBattle({ setScreen, setContentView, playSoundEffect, characte
     if (resultScreen.type !== 'won' && resultScreen.type !== 'unlocked') return undefined
     const sections = normalizeSections(resultScreen.sections)
     if (!sections.length) return undefined
-    setUnlockedSections((value) => {
-      const next = [...value]
-      sections.forEach((s) => { if (!next.includes(s)) next.push(s) })
-      return next
-    })
-    return undefined
+    // Deferred via setTimeout so the state updates happen outside the effect
+    // body (avoids cascading renders).
+    const timer = setTimeout(() => {
+      setUnlockedSections((value) => {
+        const next = [...value]
+        sections.forEach((s) => { if (!next.includes(s)) next.push(s) })
+        return next
+      })
+    }, 0)
+    return () => clearTimeout(timer)
   }, [resultScreen?.type, resultScreen?.sections])
 
   // Play the "Unlocked" cue exactly when the Unlock screen becomes visible —
