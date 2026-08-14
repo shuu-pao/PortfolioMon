@@ -114,15 +114,14 @@ export const projectsInfo = {
 // ── PROFESSIONAL EXPERIENCE ──
 // Two separate roles at the same employer, newest first. ContentScreen groups
 // entries by `company` into one timeline card per employer (logo + company
-// name shown once), with each role as its own dropdown — the newest role per
-// company opens by default, older roles start collapsed. `logo` is the path
-// to that employer's logo in public/logo/.
+// name shown once — logo path is hardcoded in ContentScreen, not data-driven),
+// with each role as its own dropdown — the newest role per company opens by
+// default, older roles start collapsed.
 export const professionalExperience = [
   {
     id: 'associate',
     role: 'Software Engineering Associate',
     company: 'Accenture',
-    logo: '/logo/accenture-logo.png',
     duration: 'Aug 2026 – Present',
     location: 'Cebu City, Philippines',
     summary:
@@ -147,7 +146,6 @@ export const professionalExperience = [
     id: 'intern',
     role: 'Agentforce Developer Intern',
     company: 'Accenture',
-    logo: '/logo/accenture-logo.png',
     duration: 'Jan 2026 – Apr 2026',
     location: 'Cebu City, Philippines',
     summary:

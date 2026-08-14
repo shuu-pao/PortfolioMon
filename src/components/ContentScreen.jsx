@@ -27,7 +27,7 @@ function groupByCompany(experiences) {
   for (const exp of experiences) {
     let group = byCompany.get(exp.company)
     if (!group) {
-      group = { company: exp.company, logo: exp.logo, roles: [] }
+      group = { company: exp.company, roles: [] }
       byCompany.set(exp.company, group)
       groups.push(group)
     }
@@ -98,7 +98,7 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
           {experienceGroups.map((group) => (
             <div className="experience-company-group" key={group.company}>
               <div className="experience-company-header">
-                <img src={group.logo} alt={`${group.company} logo`} className="experience-company-logo" />
+                <img src="/logo/accenture-logo.png" alt="Accenture logo" className="experience-company-logo" />
                 <p className="experience-company">{group.company}</p>
               </div>
               <div className="experience-timeline">
