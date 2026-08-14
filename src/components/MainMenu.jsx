@@ -102,7 +102,7 @@ export default function MainMenu({ menuOptions, menuIndex, currentMenuOption, se
               currentMenuOption.id === 'contact' ? 'Reach out to the CREATOR!' :
               currentMenuOption.id === 'professional' ? "Learn about the CREATOR's professional career!" :
               currentMenuOption.id === 'skills' ? "See the CREATOR's toolkit and skills!" :
-              currentMenuOption.id === 'projects' ? "Check out the CREATOR's personal projects!" :
+              currentMenuOption.id === 'projects' ? "Check out what the CREATOR has built!" :
               currentMenuOption.id === 'chat' ? 'Chat with the AI guide about the CREATOR!' :
               'Select this option to continue.'
             }</p>

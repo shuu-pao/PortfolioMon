@@ -14,7 +14,7 @@ const VIEW_TITLES = {
   professional: 'Professional Experience',
   education: 'Education',
   skills: 'Skills',
-  projects: 'Personal Projects',
+  projects: 'Projects',
   contact: 'Contact',
 }
 

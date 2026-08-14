@@ -3,7 +3,7 @@
 // lives in its own CHAT WITH AI section (see ChatAppAboutMe) — the two are
 // intentionally separate so visitors can either read a quick summary or chat
 // with the bot. Kept deliberately high-level: Professional Experience,
-// Education, Skills, and Personal Projects each have their own dedicated page
+// Education, Skills, and Projects each have their own dedicated page
 // for the specifics, so this page doesn't duplicate them.
 // `resumeHref` points at the PDF in public/resume/ — the download button
 // only renders when it's set.
@@ -73,7 +73,7 @@ export const skillsInfo = {
   ],
 }
 
-// ── PERSONAL PROJECTS ──
+// ── PROJECTS ──
 // Collapsed cards show a thumbnail + name + tech tags; `blurb` is the full
 // writeup revealed when the card is expanded via "Read more". `thumbnail`
 // paths live under public/Projects/.

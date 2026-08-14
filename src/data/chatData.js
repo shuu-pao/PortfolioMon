@@ -45,7 +45,7 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     botResponse: {
       text: `The site you're on is one — a from-scratch React/Vite turn-based battle system. I've also got a second, more traditional portfolio site built with Next.js and Framer Motion. On the academic side I built a PIC-based futsal scoreboard in embedded C (real-time timers, 7-segment displays), and co-developed SMARTBIN 3, a YOLOv8 waste-sorting thesis where I diagnosed a flawed approach and proposed the detection-based redesign that cleared a two-month stall.
 
-The Personal Projects page walks through all four. (My Agentforce work at Accenture — internship and now full-time — is on the Experience page.)`,
+The Projects page walks through all four. (My Agentforce work at Accenture — internship and now full-time — is on the Experience page.)`,
       cta: {
         label: "Check out my projects →",
         target: 'projects',

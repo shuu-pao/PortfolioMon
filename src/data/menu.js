@@ -7,7 +7,7 @@ export const menuOptionsBase = [
   { id: 'professional', label: 'PROFESSIONAL EXPERIENCE', unlockText: 'Befriend "GHOST" to unlock PROFESSIONAL EXPERIENCE.' },
   { id: 'education', label: 'EDUCATION', unlockText: 'Defeat "DR. ZANGETSU" to unlock EDUCATION.' },
   { id: 'skills', label: 'SKILLS', unlockText: null },
-  { id: 'projects', label: 'PERSONAL PROJECTS', unlockText: null },
+  { id: 'projects', label: 'PROJECTS', unlockText: null },
   { id: 'contact', label: 'CONTACT', unlockText: null },
 ]
 
@@ -17,7 +17,7 @@ export const menuOptionsBase = [
 //   GHOST        -> PROFESSIONAL EXPERIENCE (befriend: ACT -> TALK -> TALK -> JOKE)
 //   DR. ZANGETSU -> EDUCATION               (defeat, quiz fight)
 // Killing GHOST chains into the unbeatable ASGORE follow-up fight (which unlocks
-// nothing). SKILLS and PERSONAL PROJECTS have no boss at all — they're always
+// nothing). SKILLS and PROJECTS have no boss at all — they're always
 // unlocked (see unlockedSections init in useBattle).
 export const bossOptions = [
   { id: 'hollow', label: 'TWO', locked: false },

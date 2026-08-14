@@ -11,7 +11,7 @@ function unlockedSectionLabel(sections) {
     if (section === 'about') return 'ABOUT ME & RESUME'
     if (section === 'education') return 'EDUCATION'
     if (section === 'skills') return 'SKILLS'
-    if (section === 'projects') return 'PERSONAL PROJECTS'
+    if (section === 'projects') return 'PROJECTS'
     return String(section).toUpperCase()
   }
   return list.map(labelFor).join(' & ')

@@ -39,7 +39,7 @@ export function useBattle({ setScreen, setContentView, playSoundEffect, characte
   // section).
   const [resultScreen, setResultScreen] = useState(null)
   // Unlocked portfolio sections. Starts with the always-available CONTACT plus
-  // SKILLS and PERSONAL PROJECTS (there is no boss gating those two, so they're
+  // SKILLS and PROJECTS (there is no boss gating those two, so they're
   // pre-unlocked). The rest unlock during the session via battle wins or the
   // "Unlock whole menu" button. Intentionally NOT persisted: a refresh resets to
   // this baseline so the menu's progression — and the unlock button — stay
