@@ -25,3 +25,12 @@ dist-ssr
 
 # Generated graphify cache (AST extraction artifacts)
 graphify-out/cache/
+
+# Firebase CLI local deploy-hash cache (regenerates on every `firebase deploy`)
+.firebase/
+
+# Claude Code local/personal settings (permission log, machine-specific paths)
+.claude/settings.local.json
+
+# Playwright MCP scratch output (dev-session snapshots/screenshots)
+.playwright-mcp/
