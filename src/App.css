@@ -102,15 +102,9 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
 }
 .page-copy { margin: 0 0 12px; }
 
-/* ── Professional Experience (timeline: one card per employer, one dropdown
-   per role — see groupByCompany in ContentScreen.jsx) ── */
+/* ── Professional Experience (dropdown job cards) ── */
 .experience-list-card { display: flex; flex-direction: column; gap: 14px; }
-.experience-company-group { background: var(--c-panel-2); border: 3px solid var(--c-frame); box-shadow: 4px 4px 0 var(--c-shadow); }
-.experience-company-header { display: flex; align-items: center; gap: 10px; padding: 16px 16px 14px; border-bottom: 3px solid var(--c-frame); }
-.experience-company-logo { width: 32px; height: auto; object-fit: contain; }
-.experience-company { font-size: 1.4rem; color: var(--c-purple); margin: 0; font-weight: bold; }
-.experience-timeline { display: flex; flex-direction: column; }
-.experience-role-item + .experience-role-item { border-top: 3px solid var(--c-frame); }
+.experience-card { background: var(--c-panel-2); border: 3px solid var(--c-frame); box-shadow: 4px 4px 0 var(--c-shadow); }
 .experience-toggle {
   all: unset;
   box-sizing: border-box;
@@ -130,6 +124,9 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
   letter-spacing: 0.06rem;
   margin: 0 0 4px;
 }
+.experience-company-row { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.experience-company-logo { width: 28px; height: auto; object-fit: contain; }
+.experience-company { font-size: 1.4rem; color: var(--c-purple); margin: 0; font-weight: bold; }
 .experience-meta {
   font-size: 1.05rem;
   color: var(--c-ink);

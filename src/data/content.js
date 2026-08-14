@@ -112,11 +112,11 @@ export const projectsInfo = {
 }
 
 // ── PROFESSIONAL EXPERIENCE ──
-// Two separate roles at the same employer, newest first. ContentScreen groups
-// entries by `company` into one timeline card per employer (logo + company
-// name shown once — logo path is hardcoded in ContentScreen, not data-driven),
-// with each role as its own dropdown — the newest role per company opens by
-// default, older roles start collapsed.
+// Two separate roles at the same employer, newest first. Rendered as
+// collapsed-by-default dropdown cards in ContentScreen — only role/company/
+// duration show until the card is expanded. Each card shows its own company
+// row (logo + name); the logo path is hardcoded in ContentScreen, not
+// data-driven.
 export const professionalExperience = [
   {
     id: 'associate',

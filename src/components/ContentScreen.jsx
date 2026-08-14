@@ -18,25 +18,6 @@ const VIEW_TITLES = {
   contact: 'Contact',
 }
 
-// Groups same-company entries into one timeline card (logo + company name
-// shown once) instead of a duplicate header per role. `professionalExperience`
-// is static, so this only needs to run once at module load.
-function groupByCompany(experiences) {
-  const groups = []
-  const byCompany = new Map()
-  for (const exp of experiences) {
-    let group = byCompany.get(exp.company)
-    if (!group) {
-      group = { company: exp.company, roles: [] }
-      byCompany.set(exp.company, group)
-      groups.push(group)
-    }
-    group.roles.push(exp)
-  }
-  return groups
-}
-const experienceGroups = groupByCompany(professionalExperience)
-
 // Portfolio content pages (About / Professional / Education / Skills / Projects
 // / Contact) plus the CHAT WITH AI experience. `contentView` selects which;
 // back navigation is owned by App.
@@ -47,11 +28,8 @@ const experienceGroups = groupByCompany(professionalExperience)
 // page — the chatbot and the summary are deliberately distinct.
 export default function ContentScreen({ contentView, onBack, onHover, onSelect, onNavigate }) {
   // Which experience/project cards are expanded, keyed by id/name. Toggled
-  // independently — opening one doesn't close the others. The newest role in
-  // each experience group starts open; everything else starts collapsed.
-  const [openExperiences, setOpenExperiences] = useState(
-    () => new Set(experienceGroups.map((group) => group.roles[0].id))
-  )
+  // independently — opening one doesn't close the others.
+  const [openExperiences, setOpenExperiences] = useState(() => new Set())
   const [openProjects, setOpenProjects] = useState(() => new Set())
 
   function toggleSetItem(setState, key) {
@@ -95,50 +73,44 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
 
       {contentView === 'professional' && (
         <div className="content-card experience-list-card">
-          {experienceGroups.map((group) => (
-            <div className="experience-company-group" key={group.company}>
-              <div className="experience-company-header">
-                <img src="/logo/accenture-logo.png" alt="Accenture logo" className="experience-company-logo" />
-                <p className="experience-company">{group.company}</p>
-              </div>
-              <div className="experience-timeline">
-                {group.roles.map((exp) => {
-                  const isOpen = openExperiences.has(exp.id)
-                  return (
-                    <div className={`experience-role-item ${isOpen ? 'is-open' : ''}`} key={exp.id}>
-                      <button
-                        type="button"
-                        className="experience-toggle"
-                        onClick={() => { onSelect?.(); toggleSetItem(setOpenExperiences, exp.id) }}
-                        onMouseEnter={onHover}
-                        aria-expanded={isOpen}
-                      >
-                        <div className="experience-head">
-                          <h3 className="experience-role">{exp.role}</h3>
-                          <p className="experience-meta">{exp.duration} · {exp.location}</p>
-                        </div>
-                        <span className="experience-chevron" aria-hidden="true">{isOpen ? '▲' : '▼'}</span>
-                      </button>
-
-                      {isOpen && (
-                        <div className="experience-body">
-                          <p className="page-copy experience-summary">{exp.summary}</p>
-                          {exp.sections.map((section) => (
-                            <div className="experience-section" key={section.title}>
-                              <h4 className="experience-section-title">{section.title}</h4>
-                              <ul className="experience-list">
-                                {section.points.map((point) => <li key={point}>{point}</li>)}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
-                      )}
+          {professionalExperience.map((exp) => {
+            const isOpen = openExperiences.has(exp.id)
+            return (
+              <div className={`experience-card ${isOpen ? 'is-open' : ''}`} key={exp.id}>
+                <button
+                  type="button"
+                  className="experience-toggle"
+                  onClick={() => { onSelect?.(); toggleSetItem(setOpenExperiences, exp.id) }}
+                  onMouseEnter={onHover}
+                  aria-expanded={isOpen}
+                >
+                  <div className="experience-head">
+                    <h3 className="experience-role">{exp.role}</h3>
+                    <div className="experience-company-row">
+                      <img src="/logo/accenture-logo.png" alt="Accenture logo" className="experience-company-logo" />
+                      <p className="experience-company">{exp.company}</p>
                     </div>
-                  )
-                })}
+                    <p className="experience-meta">{exp.duration} · {exp.location}</p>
+                  </div>
+                  <span className="experience-chevron" aria-hidden="true">{isOpen ? '▲' : '▼'}</span>
+                </button>
+
+                {isOpen && (
+                  <div className="experience-body">
+                    <p className="page-copy experience-summary">{exp.summary}</p>
+                    {exp.sections.map((section) => (
+                      <div className="experience-section" key={section.title}>
+                        <h4 className="experience-section-title">{section.title}</h4>
+                        <ul className="experience-list">
+                          {section.points.map((point) => <li key={point}>{point}</li>)}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       )}
 
