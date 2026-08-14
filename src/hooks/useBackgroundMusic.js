@@ -14,7 +14,6 @@ export function useBackgroundMusic({
   muted,
   volume,
   menuPlaylist,
-  menuPlaylistKey,
   menuTrackIndex,
   setMenuTrackIndex,
   battleMusicReady,
@@ -59,11 +58,10 @@ export function useBackgroundMusic({
     // this flag — the GHOST theme keeps looping underneath until then.
     if (inBattle && battleState.allowMusic === false) return undefined
 
-    // A stable identity for the track we want, e.g. "menu:persona:1" or
-    // "battle:hollow". We compare THIS (not the raw URL) so we don't reload on
-    // every state update, and it also changes when the active playlist swaps, so
-    // switching playlists always reloads the source.
-    const trackKey = inBattle ? `battle:${battleState.mode}` : `menu:${menuPlaylistKey}:${menuTrackIndex}`
+    // A stable identity for the track we want, e.g. "menu:1" or "battle:hollow".
+    // We compare THIS (not the raw URL) so we don't reload on every unrelated
+    // state update.
+    const trackKey = inBattle ? `battle:${battleState.mode}` : `menu:${menuTrackIndex}`
     const desiredSrc = inBattle
       ? audioUrl(battleThemes[battleState.mode])
       : audioUrl(menuPlaylist[menuTrackIndex].file)
@@ -98,5 +96,5 @@ export function useBackgroundMusic({
     // Background music is capped at 15% of the slider so it never blasts at full
     // power — too loud otherwise. The slider now maps to 0%–15% music volume.
     audio.volume = muted ? 0 : volume * 0.15
-  }, [screen, battleState, battleState?.mode, battleState?.result, menuPlaylist, menuPlaylistKey, menuTrackIndex, muted, volume, battleMusicReady, bossCuePlaying, setMenuTrackIndex])
+  }, [screen, battleState, battleState?.mode, battleState?.result, menuPlaylist, menuTrackIndex, muted, volume, battleMusicReady, bossCuePlaying, setMenuTrackIndex])
 }

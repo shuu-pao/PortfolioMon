@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 
-import { menuOptionsBase, bossOptions, UNLOCKABLE_SECTIONS, STAR_SLOTS, menuPlaylists, DEFAULT_PLAYLIST, DEFAULT_TRACK_INDEX, PLAYLIST_DEFAULT_TRACK } from './data/menu'
+import { menuOptionsBase, bossOptions, UNLOCKABLE_SECTIONS, STAR_SLOTS, personaPlaylist, DEFAULT_TRACK_INDEX } from './data/menu'
 import { battleThemes } from './data/bosses'
 import { useAudio } from './hooks/useAudio'
 import { useBattle } from './hooks/useBattle'
@@ -20,7 +20,6 @@ function App() {
   const [menuIndex, setMenuIndex] = useState(0)
   const [bossIndex, setBossIndex] = useState(0)
   const [contentView, setContentView] = useState(null)
-  const [menuPlaylistKey, setMenuPlaylistKey] = useState(DEFAULT_PLAYLIST)
   const [menuTrackIndex, setMenuTrackIndex] = useState(DEFAULT_TRACK_INDEX)
   // Character name the player types in before their first battle. Stored only in
   // component state (never persisted), so a page refresh forgets it and re-prompts.
@@ -40,8 +39,7 @@ function App() {
     battleState: battle.battleState,
     muted: audio.muted,
     volume: audio.volume,
-    menuPlaylist: menuPlaylists[menuPlaylistKey],
-    menuPlaylistKey,
+    menuPlaylist: personaPlaylist,
     menuTrackIndex,
     setMenuTrackIndex,
     battleMusicReady: battle.battleMusicReady,
@@ -62,7 +60,7 @@ function App() {
   // theme, otherwise we use the menu playlist track at the current index.
   const nowPlayingFile = (screen === 'battle' && battle.battleState)
     ? battleThemes[battle.battleState.mode]
-    : menuPlaylists[menuPlaylistKey][menuTrackIndex]?.file
+    : personaPlaylist[menuTrackIndex]?.file
   const nowPlayingName = nowPlayingFile ? nowPlayingFile.replace(/\.mp3$/i, '') : ''
 
   // Starts the game from the title screen. Wired to both "click anywhere" and
@@ -74,19 +72,7 @@ function App() {
 
   function handleNextSong() {
     audio.handleButtonSelect()
-    setMenuTrackIndex((value) => (value + 1) % menuPlaylists[menuPlaylistKey].length)
-  }
-
-  // Flip to the other menu playlist and start it on that playlist's default
-  // opening track (Persona on "Beneath the Mask", Pokemon on its first track).
-  // Using the per-playlist default (not always 0) means switching back to Persona
-  // resumes on "Beneath the Mask", and resetting the index avoids an out-of-range
-  // track when the two playlists differ in length (Persona has 7, Pokemon has 4).
-  function handleTogglePlaylist() {
-    audio.handleButtonSelect()
-    const next = menuPlaylistKey === 'persona' ? 'pokemon' : 'persona'
-    setMenuPlaylistKey(next)
-    setMenuTrackIndex(PLAYLIST_DEFAULT_TRACK[next])
+    setMenuTrackIndex((value) => (value + 1) % personaPlaylist.length)
   }
 
   // Called when a boss is chosen. If the player hasn't named their character yet,
@@ -348,11 +334,8 @@ function App() {
         setVolume={audio.setVolume}
         onToggle={() => { audio.handleButtonSelect(); audio.setMuted((value) => !value) }}
         onNextSong={handleNextSong}
-        onTogglePlaylist={handleTogglePlaylist}
-        playlistLabel={menuPlaylistKey === 'persona' ? 'POKEMON' : 'PERSONA'}
         onHover={audio.handleButtonHover}
         showNextSong={screen !== 'battle'}
-        showPlaylistToggle={screen !== 'battle'}
       />
     </main>
   )

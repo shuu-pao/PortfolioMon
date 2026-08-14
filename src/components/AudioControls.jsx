@@ -5,7 +5,7 @@ import { useState } from 'react'
 // Collapsed to a small floating button at bottom-left with a persistent,
 // transparent "Now playing" label to its right. Clicking the button opens a
 // popover (upward) with the full controls — the popover never covers the label.
-export default function AudioControls({ nowPlayingName, muted, volume, setVolume, onToggle, onNextSong, onTogglePlaylist, onHover, showNextSong, showPlaylistToggle, playlistLabel }) {
+export default function AudioControls({ nowPlayingName, muted, volume, setVolume, onToggle, onNextSong, onHover, showNextSong }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -17,9 +17,6 @@ export default function AudioControls({ nowPlayingName, muted, volume, setVolume
         <div className="audio-popover">
           <div className="audio-buttons">
             <button type="button" className="audio-toggle" onClick={onToggle} onMouseEnter={onHover}>{muted ? '🔇' : '🔊'}</button>
-            {showPlaylistToggle && (
-              <button type="button" className="audio-toggle playlist-toggle" onClick={onTogglePlaylist} onMouseEnter={onHover}>{playlistLabel}</button>
-            )}
             {showNextSong && (
               <button type="button" className="audio-toggle next-song" onClick={onNextSong} onMouseEnter={onHover}>NEXT SONG</button>
             )}

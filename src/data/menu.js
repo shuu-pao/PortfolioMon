@@ -29,16 +29,8 @@ export const bossOptions = [
   { id: 'projectsBoss', label: 'BOSS 05', locked: true },
 ]
 
-// Menu background music. Two selectable playlists the player can switch between
-// from the in-game audio controls (see AudioControls). `menuPlaylists` is keyed
-// by an id used for React state; the active playlist loops through its tracks.
-export const pokemonPlaylist = [
-  { file: 'Pokemon Black and White OST - Driftveil City.mp3' },
-  { file: 'Pokemon HGSS Music - Violet and Olivine Cities.mp3' },
-  { file: 'Pokemon RubySapphireEmerald - Littleroot Town.mp3' },
-  { file: 'Pokemon DP Music - Canalave City.mp3' },
-]
-
+// Menu background music — a single Persona playlist that loops, with a
+// "NEXT SONG" control in AudioControls to skip ahead.
 export const personaPlaylist = [
   { file: 'Persona 5 OST 69 - Sweet.mp3' },
   { file: 'Persona 5 OST 29 - Beneath the Mask.mp3' },
@@ -49,26 +41,11 @@ export const personaPlaylist = [
   { file: 'Persona 4 OST - Heartbeat Heartbreak.mp3' },
 ]
 
-export const menuPlaylists = {
-  pokemon: pokemonPlaylist,
-  persona: personaPlaylist,
-}
-
-// Playlist active on first load.
-export const DEFAULT_PLAYLIST = 'persona'
-
-// Opening track for each playlist (index into that playlist). Persona always
-// opens on "Beneath the Mask"; Pokemon opens on its first track. Used both for
-// the initial load and whenever the player switches TO that playlist, so going
-// Pokemon -> Persona resumes on "Beneath the Mask" rather than its first track.
-export const PLAYLIST_DEFAULT_TRACK = {
-  persona: personaPlaylist.findIndex(
-    (track) => track.file === 'Persona 5 OST 29 - Beneath the Mask.mp3'
-  ) || 0,
-  pokemon: 0,
-}
-
-export const DEFAULT_TRACK_INDEX = PLAYLIST_DEFAULT_TRACK[DEFAULT_PLAYLIST]
+// Opening track index — always starts on "Beneath the Mask" rather than the
+// playlist's first track.
+export const DEFAULT_TRACK_INDEX = personaPlaylist.findIndex(
+  (track) => track.file === 'Persona 5 OST 29 - Beneath the Mask.mp3'
+) || 0
 
 // Section ids that a battle or the browse-bypass can unlock. `chat` is always
 // available and is intentionally excluded here.

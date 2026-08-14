@@ -594,14 +594,6 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
   letter-spacing: 0.08rem;
   text-transform: uppercase;
 }
-.audio-toggle.playlist-toggle {
-  width: auto;
-  padding: 0 12px;
-  font-family: var(--font-display);
-  font-size: 0.55rem;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-}
 .audio-controls input[type='range'] { accent-color: var(--c-cyan); cursor: pointer; }
 
 /* ── Menu / battle action buttons ── */
