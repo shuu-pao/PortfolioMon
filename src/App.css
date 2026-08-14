@@ -102,21 +102,39 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
 }
 .page-copy { margin: 0 0 12px; }
 
-/* ── Professional Experience (job card) ── */
-.experience-head { margin-bottom: 16px; }
+/* ── Professional Experience (dropdown job cards) ── */
+.experience-list-card { display: flex; flex-direction: column; gap: 14px; }
+.experience-card { background: var(--c-panel-2); border: 3px solid var(--c-frame); box-shadow: 4px 4px 0 var(--c-shadow); }
+.experience-toggle {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  cursor: pointer;
+}
+.experience-toggle:hover { filter: brightness(1.1); }
+.experience-head { flex: 1; }
 .experience-role {
   font-family: var(--font-display);
   font-size: 1.15rem;
   letter-spacing: 0.06rem;
   margin: 0 0 4px;
 }
-.experience-company { font-size: 1.4rem; color: var(--c-ink); margin: 0 0 2px; font-weight: bold; }
+.experience-company-row { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.experience-company-logo { width: 28px; height: auto; object-fit: contain; }
+.experience-company { font-size: 1.4rem; color: var(--c-purple); margin: 0; font-weight: bold; }
 .experience-meta {
   font-size: 1.05rem;
   color: var(--c-ink);
   opacity: 0.75;
-  margin: 0 0 14px;
+  margin: 4px 0 0;
 }
+.experience-chevron { font-size: 0.9rem; color: var(--c-cyan); flex-shrink: 0; margin-top: 4px; }
+.experience-body { padding: 0 16px 16px; }
 .experience-summary { margin-bottom: 18px; }
 .experience-section { margin-bottom: 16px; }
 .experience-section-title {
@@ -1132,32 +1150,14 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
 .about-card { display: flex; flex-direction: column; gap: 14px; }
 .about-highlights { margin: 4px 0 0; padding-left: 18px; list-style: square; }
 .about-highlights li { color: var(--c-ink); font-size: 1.2rem; line-height: 1.45; margin-bottom: 8px; }
-.about-chat-link {
-  align-self: flex-start;
-  margin-top: 6px;
-  padding: 12px 18px;
-  font-family: var(--font-display);
-  font-size: 0.66rem;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-  color: var(--c-cyan);
-  background: var(--c-panel-2);
-  border: 3px solid var(--c-cyan);
-  box-shadow: 4px 4px 0 var(--c-shadow);
-  cursor: pointer;
-  transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.12s ease;
-}
-.about-chat-link:hover { filter: brightness(1.15); }
-.about-chat-link:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--c-shadow); }
-
 /* ── Education (redesigned) ── */
 .edu-card { display: flex; flex-direction: column; gap: 14px; }
-.edu-head { display: flex; flex-direction: column; gap: 4px; padding-bottom: 12px; border-bottom: 2px solid var(--c-frame); }
+.edu-head { display: flex; flex-direction: column; gap: 4px; padding-bottom: 12px; }
 .edu-degree { font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.04rem; color: var(--c-ink); }
-.edu-school { font-size: 1.5rem; font-weight: bold; color: var(--c-cyan); margin: 0; }
+.edu-school-row { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.edu-school-logo { width: 28px; height: auto; object-fit: contain; }
+.edu-school { font-size: 1.5rem; font-weight: bold; color: var(--c-green); margin: 0; }
 .edu-meta { font-size: 1.05rem; color: var(--c-muted); margin: 0; }
-.edu-highlights { margin: 0; padding-left: 18px; list-style: square; }
-.edu-highlights li { color: var(--c-ink); font-size: 1.2rem; line-height: 1.45; margin-bottom: 8px; }
 
 /* ── Skills ── */
 .skills-card { display: flex; flex-direction: column; gap: 16px; }
@@ -1175,15 +1175,31 @@ h4 { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.08re
   background: rgba(69, 230, 255, 0.08);
 }
 
-/* ── Projects ── */
+/* ── Projects (expandable cards) ──
+   Collapsed cards show only a name + tech tags, so heights already match
+   without any stretching. Only the opened card grows to fit its full blurb —
+   its row-mates stay put instead of being stretched to match it. */
 .projects-card { display: flex; flex-direction: column; gap: 16px; }
 .projects-intro { margin: 0; }
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
-.project-card { display: flex; flex-direction: column; gap: 10px; padding: 16px; background: var(--c-panel-2); border: 3px solid var(--c-frame); box-shadow: 4px 4px 0 var(--c-shadow); }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; align-items: start; }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  width: 100%;
+  background: var(--c-panel-2);
+  border: 3px solid var(--c-frame);
+  box-shadow: 4px 4px 0 var(--c-shadow);
+  cursor: pointer;
+  text-align: left;
+}
+.project-card:hover { filter: brightness(1.1); }
 .project-name { font-family: var(--font-display); font-size: 0.92rem; letter-spacing: 0.04rem; color: var(--c-ink); margin: 0; }
 .project-blurb { font-size: 1.15rem; line-height: 1.45; color: var(--c-ink); margin: 0; }
 .project-tech { display: flex; flex-wrap: wrap; gap: 8px; }
 .tech-tag { font-family: var(--font-display); font-size: 0.5rem; letter-spacing: 0.06rem; text-transform: uppercase; color: var(--c-ink); padding: 5px 10px; border: 2px solid var(--c-muted); background: rgba(255, 255, 255, 0.04); }
+.project-more { font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.06rem; text-transform: uppercase; color: var(--c-cyan); margin-top: 2px; }
 .project-link { align-self: flex-start; margin-top: 2px; font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.08rem; text-transform: uppercase; color: var(--c-cyan); text-decoration: none; border-bottom: 2px solid var(--c-cyan); }
 
 /* ── Contact (redesigned) ── */

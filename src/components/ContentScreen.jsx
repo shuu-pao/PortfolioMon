@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   aboutInfo,
   educationInfo,
@@ -9,7 +10,7 @@ import {
 import ChatAppAboutMe from './ChatAppAboutMe'
 
 const VIEW_TITLES = {
-  about: 'About Me',
+  about: 'About Me & Resume',
   professional: 'Professional Experience',
   education: 'Education',
   skills: 'Skills',
@@ -26,6 +27,19 @@ const VIEW_TITLES = {
 // CTAs jump to other sections via `onNavigate`. ABOUT ME is a separate, static
 // page — the chatbot and the summary are deliberately distinct.
 export default function ContentScreen({ contentView, onBack, onHover, onSelect, onNavigate }) {
+  // Which experience/project cards are expanded, keyed by id/name. Toggled
+  // independently — opening one doesn't close the others.
+  const [openExperiences, setOpenExperiences] = useState(() => new Set())
+  const [openProjects, setOpenProjects] = useState(() => new Set())
+
+  function toggleSetItem(setState, key) {
+    setState((prev) => {
+      const next = new Set(prev)
+      next.has(key) ? next.delete(key) : next.add(key)
+      return next
+    })
+  }
+
   if (contentView === 'chat') {
     return (
       <section className="screen content-screen content-screen-chat">
@@ -49,33 +63,54 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
           <ul className="about-highlights">
             {aboutInfo.highlights.map((item) => <li key={item}>{item}</li>)}
           </ul>
-          <button
-            type="button"
-            className="about-chat-link"
-            onClick={() => onNavigate('chat')}
-            onMouseEnter={onHover}
-          >
-            Chat with the AI guide →
-          </button>
+          {aboutInfo.resumeHref && (
+            <a className="resume-btn" href={aboutInfo.resumeHref} target="_blank" rel="noreferrer" onMouseEnter={onHover}>
+              Download Résumé
+            </a>
+          )}
         </div>
       )}
 
       {contentView === 'professional' && (
-        <div className="content-card">
-          <div className="experience-head">
-            <h3 className="experience-role">{professionalExperience.role}</h3>
-            <p className="experience-company">{professionalExperience.company}</p>
-            <p className="experience-meta">{professionalExperience.duration} · {professionalExperience.location}</p>
-          </div>
-          <p className="page-copy experience-summary">{professionalExperience.summary}</p>
-          {professionalExperience.sections.map((section) => (
-            <div className="experience-section" key={section.title}>
-              <h4 className="experience-section-title">{section.title}</h4>
-              <ul className="experience-list">
-                {section.points.map((point) => <li key={point}>{point}</li>)}
-              </ul>
-            </div>
-          ))}
+        <div className="content-card experience-list-card">
+          {professionalExperience.map((exp) => {
+            const isOpen = openExperiences.has(exp.id)
+            return (
+              <div className={`experience-card ${isOpen ? 'is-open' : ''}`} key={exp.id}>
+                <button
+                  type="button"
+                  className="experience-toggle"
+                  onClick={() => { onSelect?.(); toggleSetItem(setOpenExperiences, exp.id) }}
+                  onMouseEnter={onHover}
+                  aria-expanded={isOpen}
+                >
+                  <div className="experience-head">
+                    <h3 className="experience-role">{exp.role}</h3>
+                    <div className="experience-company-row">
+                      <img src="/logo/accenture-logo.png" alt="Accenture logo" className="experience-company-logo" />
+                      <p className="experience-company">{exp.company}</p>
+                    </div>
+                    <p className="experience-meta">{exp.duration} · {exp.location}</p>
+                  </div>
+                  <span className="experience-chevron" aria-hidden="true">{isOpen ? '▲' : '▼'}</span>
+                </button>
+
+                {isOpen && (
+                  <div className="experience-body">
+                    <p className="page-copy experience-summary">{exp.summary}</p>
+                    {exp.sections.map((section) => (
+                      <div className="experience-section" key={section.title}>
+                        <h4 className="experience-section-title">{section.title}</h4>
+                        <ul className="experience-list">
+                          {section.points.map((point) => <li key={point}>{point}</li>)}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </div>
       )}
 
@@ -83,12 +118,12 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
         <div className="content-card edu-card">
           <div className="edu-head">
             <h3 className="edu-degree">{educationInfo.degree}</h3>
-            <p className="edu-school">{educationInfo.school}</p>
+            <div className="edu-school-row">
+              <img src="/logo/usc-logo.svg" alt="University of San Carlos logo" className="edu-school-logo" />
+              <p className="edu-school">{educationInfo.school}</p>
+            </div>
             <p className="edu-meta">{educationInfo.duration} · {educationInfo.location}</p>
           </div>
-          <ul className="edu-highlights">
-            {educationInfo.highlights.map((item) => <li key={item}>{item}</li>)}
-          </ul>
         </div>
       )}
 
@@ -114,22 +149,42 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
         <div className="content-card projects-card">
           <p className="page-copy projects-intro">{projectsInfo.intro}</p>
           <div className="projects-grid">
-            {projectsInfo.projects.map((project) => (
-              <div className="project-card" key={project.name}>
-                <h4 className="project-name">{project.name}</h4>
-                <p className="project-blurb">{project.blurb}</p>
-                <div className="project-tech">
-                  {project.tech.map((tech) => (
-                    <span className="tech-tag" key={tech}>{tech}</span>
-                  ))}
+            {projectsInfo.projects.map((project) => {
+              const isOpen = openProjects.has(project.name)
+              const toggle = () => { onSelect?.(); toggleSetItem(setOpenProjects, project.name) }
+              return (
+                <div
+                  className={`project-card ${isOpen ? 'is-open' : ''}`}
+                  key={project.name}
+                  role="button"
+                  tabIndex={0}
+                  onClick={toggle}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle() } }}
+                  onMouseEnter={onHover}
+                  aria-expanded={isOpen}
+                >
+                  <h4 className="project-name">{project.name}</h4>
+                  {isOpen && <p className="project-blurb">{project.blurb}</p>}
+                  <div className="project-tech">
+                    {project.tech.map((tech) => (
+                      <span className="tech-tag" key={tech}>{tech}</span>
+                    ))}
+                  </div>
+                  <span className="project-more">{isOpen ? 'Show less ▲' : 'Read more ▼'}</span>
+                  {project.href && isOpen && (
+                    <a
+                      className="project-link"
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      View project →
+                    </a>
+                  )}
                 </div>
-                {project.href && (
-                  <a className="project-link" href={project.href} target="_blank" rel="noreferrer">
-                    View project →
-                  </a>
-                )}
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       )}
@@ -142,11 +197,6 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
               <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
             ))}
           </div>
-          {contactInfo.resumeHref && (
-            <a className="resume-btn" href={contactInfo.resumeHref} target="_blank" rel="noreferrer" onMouseEnter={onHover}>
-              Download Résumé
-            </a>
-          )}
         </div>
       )}
 

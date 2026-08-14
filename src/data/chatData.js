@@ -11,7 +11,7 @@ export const USER_OPTIONS = [
     id: 'story',
     label: "What's your story?",
     botResponse: {
-      text: `Comp Eng grad from University of San Carlos, Cebu — walked the stage July 2026. I got into tech because I like building things that actually work the way they're supposed to — systems, not just scripts. Design something well from the start and you spend a lot less time firefighting later.
+      text: `Comp Eng grad from University of San Carlos, Cebu — walked the stage July 2026. My focus is creative development: I build websites and automation tools using AI, blending design and engineering to solve real problems. I got into tech because I like building things that actually work the way they're supposed to and genuinely delight the people using them — whether it's AI-driven interfaces or polished web apps, every project is about turning an idea into a meaningful digital experience.
 
 This portfolio itself is one of those builds — a full turn-based RPG battle system, built from scratch with React and Vite. You're standing in it right now.`,
       cta: null,
@@ -21,7 +21,7 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     id: 'work',
     label: "What kind of work do you do?",
     botResponse: {
-      text: `I spent 540 hours at Accenture building Salesforce Agentforce agents that run the full support-case lifecycle — create, update, and close — for both internal (Console) and customer-facing (Portal) users, plus account-billing workflows like email verification, monthly statements, and payment plans. I also used Flow and Lightning to automate knowledge articles and case summaries, and rewrote agent instruction logic to stop wrong topic or action selection. The Experience page has the full breakdown.`,
+      text: `I'm a Software Engineering Associate at Accenture, where I specialize in Salesforce CRM automation — cloud-based solutions that streamline customer workflows without tying me to a single platform. That includes building Agentforce agents that run the full support-case lifecycle for both internal (Console) and customer-facing (Portal) users, plus automation like email verification, monthly statements, and payment plans. I also lean on AI tooling like Claude Code to speed up development and raise the quality bar on what I ship. Outside of that role, I extend the same instinct to tools and websites that genuinely delight users. The Experience page has the full breakdown.`,
       cta: {
         label: "See the full experience →",
         target: 'professional',
@@ -32,7 +32,7 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     id: 'skills',
     label: "What are your skills?",
     botResponse: {
-      text: `Mostly Salesforce Agentforce — agent actions, Flow logic, and Agent Instructions — plus the languages and web tools around it: JavaScript, Python, React, SQL, and C for embedded work. Beyond that I have hands-on embedded-systems experience (a PIC futsal scoreboard in C) and AI/ML exposure from my YOLOv8 thesis. The Skills page has the full categorized list.`,
+      text: `Salesforce Agentforce is core to my day job — agent actions, Flow logic, Agent Instructions — plus the frontend and backend stack I use to ship real products: React, Next.js, Node.js, TypeScript, Tailwind. I lean hard on AI-assisted tooling like Claude Code and GitHub Copilot to move faster without cutting corners on quality, and I've got hands-on embedded-systems and computer-vision experience from my degree (a PIC futsal scoreboard in C, a YOLOv8 thesis). The Skills page has the full categorized list.`,
       cta: {
         label: "See my skills →",
         target: 'skills',
@@ -43,9 +43,9 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     id: 'projects',
     label: "What have you built?",
     botResponse: {
-      text: `The site you're on is one — a from-scratch React/Vite turn-based battle system. On the academic side I built a PIC-based futsal scoreboard in embedded C (real-time timers, 7-segment displays), and co-developed SMARTBIN 3, a YOLOv8 waste-sorting thesis where I diagnosed a flawed approach and proposed the detection-based redesign that cleared a two-month stall.
+      text: `The site you're on is one — a from-scratch React/Vite turn-based battle system. I've also got a second, more traditional portfolio site built with Next.js and Framer Motion. On the academic side I built a PIC-based futsal scoreboard in embedded C (real-time timers, 7-segment displays), and co-developed SMARTBIN 3, a YOLOv8 waste-sorting thesis where I diagnosed a flawed approach and proposed the detection-based redesign that cleared a two-month stall.
 
-The Personal Projects page walks through them. (My Agentforce work is on the Experience page — that was my Accenture internship.)`,
+The Personal Projects page walks through all four. (My Agentforce work at Accenture — internship and now full-time — is on the Experience page.)`,
       cta: {
         label: "Check out my projects →",
         target: 'projects',
@@ -67,7 +67,7 @@ The Personal Projects page walks through them. (My Agentforce work is on the Exp
     id: 'availability',
     label: "Are you available for work?",
     botResponse: {
-      text: `I'm actively looking for opportunities right now, so — good timing! I'm especially interested in roles around Salesforce, Agentforce, or building smart customer-experience tooling. If that's the kind of work you're hiring for, I'd genuinely love to talk.`,
+      text: `I'm full-time at Accenture right now, so I'm not actively hunting for a new role — but I'm always up for a good conversation about Salesforce, Agentforce, or interesting engineering problems. If that's what you're after, reach out any time.`,
       cta: {
         label: "Go to contact info →",
         target: 'contact',
@@ -78,7 +78,7 @@ The Personal Projects page walks through them. (My Agentforce work is on the Exp
     id: 'contact',
     label: "How do I get in touch?",
     botResponse: {
-      text: `I'm actively looking for opportunities right now, so — good timing. Fastest way to reach me is email or LinkedIn, both linked below — and you'll also find my GitHub, Instagram, and a downloadable résumé on the contact page. Always happy to talk Salesforce, Agentforce, or the engineering behind this portfolio.`,
+      text: `Fastest way to reach me is email or LinkedIn, both linked on the contact page — you'll also find my GitHub and Instagram there. My résumé is downloadable from the About Me & Resume page. Always happy to talk Salesforce, Agentforce, or the engineering behind this portfolio.`,
       cta: {
         label: "Go to contact info →",
         target: 'contact',
