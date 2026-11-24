@@ -44,7 +44,7 @@ src/
   data/         all portfolio content, menus, bosses, quiz questions, chat script
 ```
 
-- **The game logic doesn't depend on React.** Each fight in `src/game/` is a pure function that takes the battle state and returns the sequence of steps to play (text, damage, animations). `useBattle` plays those steps back. That split is why the fights can be tested in plain Node (`sim.test.mjs`) without a browser.
+- **The game logic doesn't depend on React.** Each fight in `src/game/` is a pure function that takes the battle state and returns the sequence of steps to play (text, damage, animations). `useBattle` plays those steps back. That split is why the fights can be tested in plain Node (`npm test` runs `sim.test.mjs`) without a browser.
 - **The content lives in data files.** Everything on the résumé pages lives in `src/data/content.js`, so I can update my experience without touching any components.
 
 ## Run it locally
@@ -64,7 +64,7 @@ npm run dev        # http://localhost:5173
 | `npm run build` | Production build into `dist/` |
 | `npm run preview` | Serve the production build locally |
 | `npm run lint` | Run ESLint |
-| `node --loader ./resolve.mjs sim.test.mjs` | Simulate every boss fight end to end |
+| `npm test` | Simulate every boss fight end to end |
 
 Deploy with `firebase deploy` once `npm run build` has produced `dist/`.
 

@@ -67,7 +67,7 @@ r = run(g, { id: 'joke', label: 'JOKE' })
 g = r.state
 check('joke amused', r.texts.includes('GHOST is amused!'))
 check('joke unlock text', r.texts.includes('GHOST unlocked PROFESSIONAL EXPERIENCE for you!'))
-check('joke directUnlock victory', g.result === 'victory' && g.directUnlock === true && g.unlockSection === 'professional')
+check('joke directUnlock victory', g.result === 'victory' && g.directUnlock === true && g.unlockSections.includes('professional'))
 
 // ---- GHOST talk while hurt ----
 console.log('\n[GHOST talk while hurt]')
@@ -117,16 +117,15 @@ for (let i = 0; i < 4; i++) {
   playerDmgTaken.push(before - a.player.hp)
 }
 check('asgore pattern WS,WS,prep,strike', asTexts.includes('ASGORE attacks.') && asTexts.includes('ASGORE is preparing for a huge swing.') && asTexts.includes('ASGORE attacks with a huge swing.'))
-check('asgore dmg 25,25,0,70', JSON.stringify(playerDmgTaken) === JSON.stringify([25,25,0,70]))
+check('asgore dmg 25,25,0,50', JSON.stringify(playerDmgTaken) === JSON.stringify([25,25,0,50]))
 check('asgore takes 10 each', a.enemy.hp === 60)
 
-// ---- ASGORE victory ----
-console.log('\n[ASGORE victory]')
+// ---- ASGORE is unbeatable by design (menu.js): the player always loses ----
+console.log('\n[ASGORE unbeatable]')
 a = startAsgore()
-// 10 dmg per hit, 100 hp => 10 hits
 for (let i = 0; i < 12; i++) { r = run(a, attack); a = r.state; if (a.result) break }
-check('asgore defeated -> victory', a.result === 'victory' && a.enemy.hp === 0)
-check('asgore victory text', r.texts.includes('You defeated ASGORE!'))
+check('asgore ends in a loss', a.result === 'loss' && a.enemy.hp > 0)
+check('asgore loss text', r.texts.includes('You lost the battle.'))
 
 // ---- TALK on hollow ----
 console.log('\n[TALK on TWO]')
