@@ -19,7 +19,7 @@ export const aboutInfo = {
     'Focused on products that work, and genuinely delight the people using them',
     'AI-driven interfaces to polished web apps — turning ideas into meaningful digital experiences',
   ],
-  resumeHref: '/resume/PAOLO_JANSEN_A_ENRERA_CV_AUGUST.pdf',
+  resumeHref: '/resume/Paolo-Enrera-Resume.pdf',
 }
 
 // ── EDUCATION (redesigned credential card) ──
@@ -33,7 +33,7 @@ export const educationInfo = {
 // ── CONTACT (redesigned) ──
 export const contactInfo = {
   blurb:
-    "I'm full-time at Accenture, so I'm not actively job-hunting — but I'm always happy to talk Salesforce, Agentforce, or the engineering behind this site. Email or LinkedIn are the fastest ways to reach me.",
+    "I'm always open to talking about software development opportunities, interesting engineering problems, or the tech behind this site. Email or LinkedIn are the fastest ways to reach me.",
   links: [
     { label: 'Email', href: 'mailto:paolo.enrera@gmail.com' },
     { label: 'GitHub', href: 'https://github.com/shuu-pao' },
@@ -48,27 +48,23 @@ export const skillsInfo = {
   categories: [
     {
       title: 'Salesforce / Agentforce',
-      items: ['Agentforce Configuration', 'Agentforce Actions', 'Flow Builder', 'Apex Basics', 'Lightning', 'Agent Instructions', 'Case Management'],
+      items: ['Apex', 'SOQL', 'Lightning Web Components', 'Flow Builder', 'Agentforce Configuration', 'Agentforce Actions', 'Agent Instructions', 'Case Management'],
     },
     {
       title: 'Frontend Development',
-      items: ['React', 'Next.js', 'Vite', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      items: ['React', 'Next.js', 'React Native (Expo)', 'Vite', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     },
     {
       title: 'Backend & Automation',
-      items: ['Node.js', 'REST APIs', 'Database Design', 'Workflow Automation', 'SQL'],
+      items: ['Node.js', 'REST APIs', 'PostgreSQL', 'Supabase', 'Prisma', 'SQL', 'Database Design', 'Workflow Automation'],
     },
     {
       title: 'AI-Assisted Development',
       items: ['Claude Code', 'GitHub Copilot', 'AI Workflows', 'Prompt Engineering'],
     },
     {
-      title: 'Embedded & Applied AI',
-      items: ['C / C++ (Embedded)', 'Python', 'Computer Vision (YOLOv8)', 'PIC / XC8 Microcontrollers'],
-    },
-    {
       title: 'Tools & Practices',
-      items: ['Git', 'Figma', 'Agile / Scrum'],
+      items: ['Git', 'GitHub Actions (CI/CD)', 'Vitest', 'Playwright', 'Figma', 'Agile / Scrum'],
     },
   ],
 }
@@ -78,8 +74,22 @@ export const skillsInfo = {
 // writeup revealed when the card is expanded via "Read more". `thumbnail`
 // paths live under public/Projects/.
 export const projectsInfo = {
-  intro: 'Builds from my degree and free time — from embedded firmware to applied computer vision. (This portfolio is one of them.)',
+  intro: 'Products I build in my own time — from a personal-finance app to a point-of-sale system for a small business. (This portfolio is one of them.)',
   projects: [
+    {
+      name: 'Tigom (Personal Finance App)',
+      blurb:
+        'A mobile-first personal-finance app that records bank and e-wallet transactions automatically by reading payment alerts on Android, with budgets, savings goals, payday forecasts and statistics. Alerts are captured in the background and retried until the server confirms them, so nothing is lost or recorded twice. Each user\'s data is protected by database-level access rules, and automated unit and end-to-end tests run on every push. I use it daily for my own spending.',
+      tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Capacitor'],
+      thumbnail: '/Projects/Tigom.jpg',
+    },
+    {
+      name: 'caracebu POS',
+      blurb:
+        'An offline-first cashier and inventory app built for a small pop-up retail business: checkout with discounts and split payments, PDF/PNG invoices and receipts, per-event reports, and a public product catalog. It keeps selling with no internet and syncs the shop\'s iPad and computer once back online, keeping stock correct across both devices. Code on GitHub: shuu-pao/e-commerce-app.',
+      tech: ['React Native', 'Expo', 'TypeScript', 'Supabase'],
+      thumbnail: '/Projects/caracebu-POS.jpg',
+    },
     {
       name: 'PortfolioMon',
       blurb:
@@ -90,23 +100,9 @@ export const projectsInfo = {
     {
       name: 'My Portfolio (Premium)',
       blurb:
-        'My other portfolio site — a cinematic, reference-matched personal site built with Next.js, TypeScript, and Framer Motion, pixel-matched to hand-picked design references.',
+        'My other portfolio site — a cinematic personal site built with Next.js, TypeScript, and Framer Motion, with scroll-driven animation, light and dark themes, and a backend-free contact form.',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       thumbnail: '/Projects/Premium Portfolio.jpg',
-    },
-    {
-      name: 'PIC-Based Futsal Scoreboard',
-      blurb:
-        'A microcontroller scoreboard written in C (XC8) with real-time match timers and 7-segment display integration — a hands-on embedded-systems lab project.',
-      tech: ['C', 'XC8', 'Embedded', 'Microcontrollers'],
-      thumbnail: '/Projects/Futsal Scoreboard.jpg',
-    },
-    {
-      name: 'SMARTBIN 3 (Thesis)',
-      blurb:
-        'Undergraduate thesis: a deep-learning waste-sorting bin using YOLOv8 for real-time classification with a motorized platform for auto-segregation. My contribution was diagnosing a flawed classification approach that had stalled progress for ~2 months and proposing an object-detection redesign with confidence-score thresholding — which my teammate implemented to clear the training bottleneck. The model reached 98.67% accuracy on standard waste and 92.44% on deformed items (targets: 98% / 80%).',
-      tech: ['YOLOv8', 'Computer Vision', 'Python', 'Deep Learning'],
-      thumbnail: '/Projects/Thesis.jpg',
     },
   ],
 }
@@ -125,36 +121,37 @@ export const professionalExperience = [
     duration: 'Aug 2026 – Present',
     location: 'Cebu City, Philippines',
     summary:
-      'Full-time Software Engineering Associate at Accenture, building Salesforce Agentforce agents and cloud-based automation tools that streamline customer workflows — a direct continuation of the Agentforce internship below.',
+      'Full-time Software Engineering Associate at Accenture, building enterprise applications on the Salesforce platform. Completed the Accenture Tech Analyst School (ATAS) and a Salesforce Developer Bootcamp, delivering a full course-registration application end to end. Continues the Agentforce work from the internship below.',
     sections: [
       {
-        title: 'Salesforce Engineering',
+        title: 'Course Registration Application',
+        period: 'Salesforce Developer Bootcamp · Sep – Nov 2026',
         points: [
-          'Continuing hands-on Salesforce Agentforce development in a full-time capacity — agent actions, Flow logic, and Agent Instructions.',
-          'Building cloud-based automation tools that streamline customer workflows beyond the case-management work done during the internship.',
-        ],
-      },
-      {
-        title: 'Engineering Practices',
-        points: [
-          'Bridging enterprise Salesforce work with the AI-assisted engineering practices I use on personal projects.',
+          'Designed and built an end-to-end course registration application covering data model, security, automation, UI, and testing.',
+          'Modeled the data with custom objects, relationships, and record types, and secured it with profiles, roles, validation rules, and approval processes.',
+          'Wrote Apex triggers with handler classes for schedule-conflict checks, enrollment-capacity limits, and student record updates, using SOQL and DML.',
+          'Automated enrollment, GPA calculation, and year-level assignment with Screen Flows and Record-Triggered Flows.',
+          'Built a custom course-registration screen as a Lightning Web Component, combining JavaScript, HTML, and Apex.',
+          'Wrote Apex test classes with reusable test data, and built reports and dashboards on enrollment and student performance.',
+          'Debugged with Apex debug logs and Flow debugging, then presented and defended the finished application as the bootcamp\'s final case study.',
         ],
       },
     ],
   },
   {
     id: 'intern',
-    role: 'Agentforce Developer Intern',
+    role: 'Salesforce Developer Intern',
     company: 'Accenture',
     duration: 'Jan 2026 – Apr 2026',
     location: 'Cebu City, Philippines',
     summary:
-      'Developed AI-driven customer-service automation on the Salesforce Agentforce platform during a 540-hour internship, working as part of a team of interns to build agents that create, update, and close support cases and automate account-billing workflows.',
+      'Developed AI-driven customer-service automation on the Salesforce Agentforce platform during a 540-hour internship, working on a team of 4–5 interns to build two agents that create, update, and close support cases and automate account-billing workflows.',
     sections: [
       {
         title: 'Agentforce Agents (Console + Portal)',
         points: [
-          'Built customer-service agents that create, update, and close cases from natural-language prompts, for both internal (Console) and customer-facing (Portal) users.',
+          'Built two customer-service agents that create, update, and close cases from natural-language prompts: a Console agent for customer-service reps and a Portal agent for customers.',
+          'Built 10+ agent actions and 5+ Flows myself, and improved existing Flows.',
           'Automated account-billing workflows: changing a billing email, email-code verification, generating monthly billing statements, and creating payment plans.',
           'Configured distinct Flow logic and Agent Instructions per environment so each agent behaved appropriately for internal vs. customer-facing use.',
         ],
@@ -170,8 +167,15 @@ export const professionalExperience = [
       {
         title: 'Instruction & Behavior Debugging',
         points: [
-          'Diagnosed systemic flaws in live agent behavior and rewrote instruction logic to eliminate incorrect topic and action selection.',
+          'Diagnosed incorrect topic and action selection in agent behavior during testing and rewrote the instruction logic, turning a failing test set into a passing one.',
           'Focused on root-cause fixes rather than surface-level patches, improving agent reliability across both environments.',
+        ],
+      },
+      {
+        title: 'Team & Testing',
+        points: [
+          'Worked in an Agile team with daily stand-ups, testing and demoing each feature to the manager before moving on.',
+          'Performed unit and end-to-end testing to prepare the agents for a live demonstration to prospective clients.',
         ],
       },
       {

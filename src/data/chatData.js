@@ -21,7 +21,7 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     id: 'work',
     label: "What kind of work do you do?",
     botResponse: {
-      text: `I'm a Software Engineering Associate at Accenture, where I specialize in Salesforce CRM automation — cloud-based solutions that streamline customer workflows without tying me to a single platform. That includes building Agentforce agents that run the full support-case lifecycle for both internal (Console) and customer-facing (Portal) users, plus automation like email verification, monthly statements, and payment plans. I also lean on AI tooling like Claude Code to speed up development and raise the quality bar on what I ship. Outside of that role, I extend the same instinct to tools and websites that genuinely delight users. The Experience page has the full breakdown.`,
+      text: `I'm a Software Engineering Associate at Accenture, where I specialize in Salesforce CRM automation — cloud-based solutions that streamline customer workflows without tying me to a single platform. During my internship there, I built Agentforce agents that run the full support-case lifecycle for both internal (Console) and customer-facing (Portal) users, plus automation like email verification, monthly statements, and payment plans. I also lean on AI tooling like Claude Code to speed up development and raise the quality bar on what I ship. Outside of that role, I extend the same instinct to tools and websites that genuinely delight users. The Experience page has the full breakdown.`,
       cta: {
         label: "See the full experience →",
         target: 'professional',
@@ -32,7 +32,7 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     id: 'skills',
     label: "What are your skills?",
     botResponse: {
-      text: `Salesforce Agentforce is core to my day job — agent actions, Flow logic, Agent Instructions — plus the frontend and backend stack I use to ship real products: React, Next.js, Node.js, TypeScript, Tailwind. I lean hard on AI-assisted tooling like Claude Code and GitHub Copilot to move faster without cutting corners on quality, and I've got hands-on embedded-systems and computer-vision experience from my degree (a PIC futsal scoreboard in C, a YOLOv8 thesis). The Skills page has the full categorized list.`,
+      text: `At work I build on the Salesforce platform — Apex, SOQL, Lightning Web Components and Flow — and during my internship I built Agentforce AI agents. For my own products I use React, Next.js, React Native, TypeScript and PostgreSQL, with Vitest and Playwright for testing. I lean hard on AI-assisted tooling like Claude Code and GitHub Copilot to move faster without cutting corners on quality, The Skills page has the full categorized list.`,
       cta: {
         label: "See my skills →",
         target: 'skills',
@@ -43,9 +43,9 @@ This portfolio itself is one of those builds — a full turn-based RPG battle sy
     id: 'projects',
     label: "What have you built?",
     botResponse: {
-      text: `The site you're on is one — a from-scratch React/Vite turn-based battle system. I've also got a second, more traditional portfolio site built with Next.js and Framer Motion. On the academic side I built a PIC-based futsal scoreboard in embedded C (real-time timers, 7-segment displays), and co-developed SMARTBIN 3, a YOLOv8 waste-sorting thesis where I diagnosed a flawed approach and proposed the detection-based redesign that cleared a two-month stall.
+      text: `My two main builds are Tigom, a personal-finance app that records bank and e-wallet transactions automatically from payment alerts on Android, and caracebu POS, an offline-first cashier and inventory app I built for a small pop-up retail business. I've also built two portfolios: the site you're on — a from-scratch React/Vite turn-based battle system — and a more traditional one with Next.js and Framer Motion.
 
-The Projects page walks through all four. (My Agentforce work at Accenture — internship and now full-time — is on the Experience page.)`,
+The Projects page walks through all four. (My Salesforce work at Accenture — internship and now full-time — is on the Experience page.)`,
       cta: {
         label: "Check out my projects →",
         target: 'projects',
@@ -67,7 +67,7 @@ The Projects page walks through all four. (My Agentforce work at Accenture — i
     id: 'availability',
     label: "Are you available for work?",
     botResponse: {
-      text: `I'm full-time at Accenture right now, so I'm not actively hunting for a new role — but I'm always up for a good conversation about Salesforce, Agentforce, or interesting engineering problems. If that's what you're after, reach out any time.`,
+      text: `I'm always open to talking about software development opportunities and interesting engineering problems. If that's what you're after, reach out any time.`,
       cta: {
         label: "Go to contact info →",
         target: 'contact',

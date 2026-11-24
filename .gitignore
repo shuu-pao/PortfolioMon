@@ -34,3 +34,10 @@ graphify-out/cache/
 
 # Playwright MCP scratch output (dev-session snapshots/screenshots)
 .playwright-mcp/
+
+# AI-tool and scratch files (kept locally, not part of the project)
+CLAUDE.md
+graphify-out/
+.continue/
+draw_chart.py
+render_current.py

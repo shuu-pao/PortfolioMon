@@ -101,6 +101,7 @@ export default function ContentScreen({ contentView, onBack, onHover, onSelect, 
                     {exp.sections.map((section) => (
                       <div className="experience-section" key={section.title}>
                         <h4 className="experience-section-title">{section.title}</h4>
+                        {section.period && <p className="experience-section-period">{section.period}</p>}
                         <ul className="experience-list">
                           {section.points.map((point) => <li key={point}>{point}</li>)}
                         </ul>
